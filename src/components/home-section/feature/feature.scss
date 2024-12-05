@@ -1,0 +1,55 @@
+@use "../../../scss/" as *;
+
+.site__feature {
+  @include flex(center, flex-start);
+  flex-direction: column;
+
+  &__title {
+    width: 100%;
+    height: 14vh;
+    margin-top: 4rem;
+    background: url(../../../assets/images/Tinh_Nang_Dac_Sac.png) no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
+
+  .accordion__wrapper {
+    position: relative;
+    display: flex;
+    width: 100rem;
+    // height: 40rem;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .accordion__content {
+      display: flex;
+      margin: 1rem auto 0;
+
+      li {
+        // .accordion__content {
+        //   display: none;
+        // }
+
+        // &:first-child {
+        //   display: block;
+        // }
+        .accordion__content__expansion {
+          // width: 0;
+          width: 92.64931vh;
+          height: 100%;
+          margin: 0 .25rem;
+          // margin-top: 0.30628vh;
+
+          border: 5px #99422f solid;
+        }
+        .accordion__content__expansion-active {
+          width: 92.64931vh;
+          margin-right: 1.37825vh;
+        }
+      }
+      li ~ li {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+}

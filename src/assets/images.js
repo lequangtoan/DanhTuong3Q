@@ -23,6 +23,9 @@ import cottruyen from "./images/Cot_Truyen.png";
 import cottruyenhover from "./images/Cot_Truyen_Hover.png";
 import char from "./images/Char.png";
 
+import tinhnangdacsac from "./images/Tinh_Nang_Dac_Sac.png"
+import storekitnormal from "./images/Storekit_Normal.png"
+
 import test from "./images/text.jpg";
 import test1 from "./images/test1.png";
 import test2 from "./images/test2.png";
@@ -51,4 +54,6 @@ export {
   cottruyen,
   cottruyenhover,
   char,
+  tinhnangdacsac,
+  storekitnormal,
 };

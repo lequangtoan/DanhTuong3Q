@@ -15,8 +15,9 @@ const swiperOptions = {
   direction: "vertical",
   slidesPerView: 1,
   spaceBetween: 0,
+  // pagination: true,
   // effect: "fade",
-  autoplay: 100,
+  autoplay: 1000,
   speed: 1000,
 };
 
