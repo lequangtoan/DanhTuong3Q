@@ -1,0 +1,150 @@
+@use "../../../scss/" as *;
+
+.plot {
+  background-image: none;
+}
+
+.planning {
+  background-image: url(../../../assets/images/Char.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 50%;
+
+  &__title {
+    width: 100%;
+    height: 14vh;
+    margin-top: 4rem;
+    background: url(../../../assets/images/Plot.png) no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
+
+  &__content {
+    position: absolute;
+    left: 15rem;
+    margin-top: 0.5rem;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    width: 45rem;
+
+    .tabs {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      &__item {
+        width: 23%;
+
+        $size: 1.25rem;
+        &__button {
+          position: relative;
+          width: 100%;
+          height: calc($size * 2);
+          background: url(../../../assets/images/Button_Item_Normal.png)
+            no-repeat;
+          background-size: 100% 100%;
+          padding: 0 20px;
+          font-family: $montserrat;
+          font-size: $size;
+          font-weight: 700;
+          font-stretch: normal;
+          line-height: calc($size * 2);
+          color: #bf5237;
+          text-align: center;
+          cursor: pointer;
+
+          span {
+            text-align: center;
+            font-size: $size;
+          }
+        }
+        .button__item__active,
+        &__button:hover {
+          color: #fff;
+          background: url(../../../assets/images/Button_Item_Active.png)
+            no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+
+      // li ~ li {
+      //   margin-left: 1.5rem;
+      // }
+    }
+
+    &__kv {
+      position: relative;
+      width: 100%;
+      margin: 0.5rem 0;
+      img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+      }
+    }
+
+    &__title {
+      width: 60%;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .planning__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+
+      li {
+        position: relative;
+        width: 14rem;
+        min-height: 7rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+
+        &:nth-of-type(3n) {
+          margin-right: 0;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        p {
+          $wrapper-title: 1rem;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          color: #fff;
+          font-family: $montserrat;
+          font-size: $wrapper-title;
+          line-height: calc($wrapper-title + 0.5rem);
+          white-space: nowrap;
+          text-indent: 0.5em;
+          text-overflow: ellipsis;
+          background: linear-gradient(0.25turn, #a63039f0, #ffffff00);
+        }
+      }
+      li:hover:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(../../../assets/images/Cot_Truyen_Hover.png) no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}

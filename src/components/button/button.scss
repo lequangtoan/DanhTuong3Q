@@ -1,0 +1,31 @@
+@use "../../scss/" as *;
+
+$size: 1.5rem;
+.button__item {
+  position: relative;
+  width: auto;
+  height: calc($size * 2.5);
+  background: url(../../assets/images/Button_Item_Normal.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 0 20px;
+  font-family: $montserrat;
+  font-size: $size;
+  font-weight: 700;
+  font-stretch: normal;
+  line-height: calc($size * 2.5);
+  color: #bf5237;
+  text-align: center;
+  cursor: pointer;
+
+  span {
+    text-align: center;
+    margin: 1rem;
+    font-size: $size;
+  }
+}
+.button__item__active,
+.button__item:hover {
+  color: #fff;
+  background: url(../../assets/images/Button_Item_Active.png) no-repeat;
+  background-size: 100% 100%;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "danh-tuong-3q",
+  "name": "danhtuong",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.81.0",
+    "swiper": "^11.1.15",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

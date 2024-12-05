@@ -1,0 +1,112 @@
+@use "../../../scss/" as *;
+
+$size: 1.5rem;
+
+.site__news {
+  @include flex(center, flex-start);
+  flex-direction: column;
+
+  &__title {
+    width: 100%;
+    height: 14vh;
+    margin-top: 4rem;
+    background: url(../../../assets/images/News.png) no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
+
+  &__center {
+    margin-top: 1rem;
+    @include flex(center, center);
+    flex-direction: column;
+    justify-items: center;
+
+    .site__tabs {
+      @include flex(center, center);
+      margin: 0 auto;
+
+      li ~ li {
+        margin-left: 2rem;
+      }
+    }
+
+    .site__news__content {
+      display: flex;
+      margin-top: 3rem;
+
+      .site__news__swiper {
+        width: 45rem;
+        height: 25rem;
+        border: 5px #99422f solid;
+        box-shadow: 10px 10px #caa19d;
+
+        img {
+          width: 45rem;
+          height: 25rem;
+          overflow: hidden;
+        }
+      }
+
+      .site__news__list {
+        @include flex(flex-start, space-between);
+        flex-direction: column;
+        margin-left: 2rem;
+
+        &__content {
+          min-width: 45rem;
+          min-height: auto;
+          font-family: $montserrat;
+          font-size: 1.5rem;
+          font-weight: 500;
+          font-stretch: normal;
+          line-height: 3.5rem;
+          letter-spacing: 0;
+          color: #555555;
+
+          li {
+            @include flex(flex-start, space-between);
+            border-bottom: 1px solid #555555;
+            cursor: pointer;
+
+            p {
+              display: flex;
+              width: 30rem;
+
+              .site__slide__in__dot {
+                margin-right: 1rem;
+              }
+
+              .site__slide__in__title {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                color: #555555;
+              }
+            }
+
+            &__title {
+              margin-left: 20px;
+            }
+            &__time {
+              width: 11.48545vh;
+              overflow: hidden;
+              color: #555555;
+              font-size: 1rem;
+            }
+          }
+
+          .site__slide__in:hover,
+          p:hover,
+          .site__slide__in__title:hover,
+          .site__slide__in__time:hover {
+            font-weight: 700;
+            color: #99422f;
+          }
+        }
+
+        &__more-link:hover {
+        }
+      }
+    }
+  }
+}
