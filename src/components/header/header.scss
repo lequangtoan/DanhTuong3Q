@@ -10,6 +10,7 @@
   pointer-events: none;
   background-image: url(../../assets/images/BG_Menu.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 
   &__inner {
     @include flex(center, center);
