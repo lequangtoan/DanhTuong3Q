@@ -26,19 +26,10 @@
       margin: 1rem auto 0;
 
       li {
-        // .accordion__content {
-        //   display: none;
-        // }
-
-        // &:first-child {
-        //   display: block;
-        // }
         .accordion__content__expansion {
-          // width: 0;
           width: 92.64931vh;
           height: 100%;
           margin: 0 .25rem;
-          // margin-top: 0.30628vh;
 
           border: 5px #99422f solid;
         }

@@ -1,3 +1,4 @@
+// menu
 import bgmenu from "./images/BG_Menu.png";
 import scrolling from "./images/Scrolling.png";
 
@@ -23,8 +24,15 @@ import cottruyen from "./images/Cot_Truyen.png";
 import cottruyenhover from "./images/Cot_Truyen_Hover.png";
 import char from "./images/Char.png";
 
-import tinhnangdacsac from "./images/Tinh_Nang_Dac_Sac.png"
-import storekitnormal from "./images/Storekit_Normal.png"
+import tinhnangdacsac from "./images/Tinh_Nang_Dac_Sac.png";
+import storekitnormal from "./images/Storekit_Normal.png";
+
+import danhtuongtamquoc from "./images/Danh_Tuong_Tam_Quoc.png";
+import footage from "./images/Footage.png";
+import nguynormal from "./images/Ngụy_Normal.png";
+import thucnormal from "./images/Thục_Normal.png";
+import ngonormal from "./images/Ngô_Normal.png";
+import quannormal from "./images/Quần_Normal.png";
 
 import test from "./images/text.jpg";
 import test1 from "./images/test1.png";
@@ -56,4 +64,10 @@ export {
   char,
   tinhnangdacsac,
   storekitnormal,
+  danhtuongtamquoc,
+  footage,
+  nguynormal,
+  thucnormal,
+  ngonormal,
+  quannormal,
 };

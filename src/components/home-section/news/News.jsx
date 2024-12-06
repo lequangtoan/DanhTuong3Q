@@ -8,7 +8,7 @@ import HomeSection from "../HomeSection";
 import Button from "../../button/Button";
 
 import { BgFrame2 } from "../../../assets/videos";
-import { buttonxemthem, stick, test, chplay } from "../../../assets/images";
+import { buttonxemthem, stick, test } from "../../../assets/images";
 
 const swiperOptions = {
   modules: [EffectFade, Autoplay],
@@ -52,7 +52,7 @@ const News = (props) => {
                   <img src={test} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={chplay} alt="" />
+                  <img src={test} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src={test} alt="" />

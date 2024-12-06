@@ -1,10 +1,9 @@
 import { scrolling } from "../../assets/images";
-import { BgFrame3 } from "../../assets/videos";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Mousewheel, Pagination } from "swiper/modules";
 
-import { Welcome, News, Plot, Feature } from "./../../components/home-section";
+import { Welcome, News, Plot, Feature, Person } from "./../../components/home-section";
 
 const swiperOptions = {
   modules: [EffectFade, Mousewheel, Pagination],
@@ -28,7 +27,7 @@ const Home = () => {
           {({ isActive }) => <News isActive={isActive} />}
         </SwiperSlide>
         <SwiperSlide>
-          <video src={BgFrame3} autoPlay muted loop />
+        {({ isActive }) => <Person isActive={isActive} />}
         </SwiperSlide>
         <SwiperSlide>
           {({ isActive }) => <Plot isActive={isActive} />}
