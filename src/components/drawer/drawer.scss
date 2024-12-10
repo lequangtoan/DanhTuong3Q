@@ -21,12 +21,14 @@
     margin-left: 12px;
 
     a {
+      padding-top: 2.5px;
       img {
         width: 7.5rem;
       }
     }
 
     &__pay {
+      padding-top: 2.5px;
       a {
         img {
           width: 9.5rem;
@@ -39,6 +41,7 @@
       flex-direction: row;
       width: 9rem;
       margin: 10px 0px 15px 0px;
+      padding-top: 2.5px;
 
       a {
         width: 10rem;
