@@ -1,6 +1,9 @@
 // menu
 import bgmenu from "./images/BG_Menu.png";
 import scrolling from "./images/Scrolling.png";
+import congdong from "./images/CongDong.png"
+import facebook from "./images/Facebook.png"
+import gialappccolum from "./images/Buttontaigialap.png"
 
 import iconframe from "./images/Icon_Frame.png";
 import iconframeactive from "./images/Icon_Frame_Active.png";
@@ -43,6 +46,9 @@ export {
   test2,
   bgmenu,
   scrolling,
+  congdong,
+  facebook,
+  gialappccolum,
   iconframe,
   iconframeactive,
   logo,

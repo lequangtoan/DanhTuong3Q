@@ -1,0 +1,51 @@
+@use "../../scss/" as *;
+
+.drawer {
+  height: $header-height;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  z-index: 100;
+  pointer-events: none;
+  background-image: url(../../assets/images/BG_Frame.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  .drawer__info__app {
+    @include flex(flex-start, center);
+    flex-direction: column;
+    margin-top: 8.5rem;
+    margin-left: 12px;
+
+    a {
+      img {
+        width: 7.5rem;
+      }
+    }
+
+    &__pay {
+      a {
+        img {
+          width: 9.5rem;
+        }
+      }
+    }
+
+    .drawer__info__Group {
+      @include flex(center, center);
+      flex-direction: row;
+      width: 9rem;
+      margin: 10px 0px 15px 0px;
+
+      a {
+        width: 10rem;
+        img {
+          width: 3rem;
+        }
+      }
+    }
+  }
+}

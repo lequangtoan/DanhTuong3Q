@@ -47,17 +47,7 @@ const News = (props) => {
           </ul>
           <div className="site__news__content">
             <div className="site__news__swiper">
-              <Swiper {...swiperOptions}>
-                <SwiperSlide>
-                  <img src={test} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={test} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={test} alt="" />
-                </SwiperSlide>
-              </Swiper>
+              <img src={test} alt="" />
             </div>
             <div className="site__news__list">
               <ul className="site__news__list__content">

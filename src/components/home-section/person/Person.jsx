@@ -79,7 +79,7 @@ const Person = (props) => {
                 src={ngonormal}
                 alt="tab"
                 className="site__person__battle__tab__wrapper__item"
-              />{" "}
+              />
               <div className="site__person__battle__swiper__wrapper">
                 <div className="swiper__slide">
                   <img src={iconcamninhactive} alt="avater" />
