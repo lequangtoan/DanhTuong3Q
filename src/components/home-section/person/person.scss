@@ -33,5 +33,55 @@
     background-size: contain;
   }
 
+  &__battle {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
 
+    &__tab {
+      @include flex(flex-start, space-between);
+      margin: 15rem 0 0 15rem;
+      width: 25%;
+
+      .site__person__battle__swiper__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 27.5rem;
+        overflow: hidden;
+        margin-top: -3.5rem;
+        padding-top: 3.5rem;
+        background: url(../../../assets/images/Slide_Char.png) no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    // &__tab:before {
+    //   content: "";
+    //   z-index: -10;
+    //   position: absolute;
+    //   border: 0.05rem dashed #7e181f;
+    //   width: 30%;
+    //   left: 15rem;
+    // }
+  }
+
+  &__description {
+    width: 30rem;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    right: 15rem;
+
+    .site__person__description__introduction{
+      margin-top: 7rem;
+      font-family: $montserrat;
+      font-size: 20px;
+      color: #000000;
+      font-weight: 600;
+    }
+  }
 }

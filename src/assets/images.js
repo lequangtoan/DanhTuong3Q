@@ -25,7 +25,6 @@ import cottruyenhover from "./images/Cot_Truyen_Hover.png";
 import char from "./images/Char.png";
 
 import tinhnangdacsac from "./images/Tinh_Nang_Dac_Sac.png";
-import storekitnormal from "./images/Storekit_Normal.png";
 
 import danhtuongtamquoc from "./images/Danh_Tuong_Tam_Quoc.png";
 import footage from "./images/Footage.png";
@@ -63,7 +62,6 @@ export {
   cottruyenhover,
   char,
   tinhnangdacsac,
-  storekitnormal,
   danhtuongtamquoc,
   footage,
   nguynormal,
