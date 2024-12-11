@@ -43,17 +43,34 @@
       margin: 15rem 0 0 15rem;
       width: 25%;
 
-      .site__person__battle__swiper__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 27.5rem;
-        overflow: hidden;
-        margin-top: -3.5rem;
-        padding-top: 3.5rem;
-        background: url(../../../assets/images/Slide_Char.png) no-repeat;
-        background-size: 100% 100%;
+      .site__person__battle__tab__wrapper__item {
+      }
+
+      .site__person__battle__tab__swiper {
+        display: none;
+
+        .site__person__battle__swiper__wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 27.5rem;
+          overflow: hidden;
+          margin-top: -3.5rem;
+          padding-top: 3.5rem;
+          background: url(../../../assets/images/Slide_Char.png) no-repeat;
+          background-size: 100% 100%;
+
+          .swiper__slide__show{
+            display: block;
+          }
+          .swiper__slide__hidden{
+            display: none;
+          }
+        }
+      }
+      .site__person__active{
+        display: block;
       }
     }
 
@@ -76,7 +93,7 @@
     top: 10rem;
     right: 15rem;
 
-    .site__person__description__introduction{
+    .site__person__description__introduction {
       margin-top: 7rem;
       font-family: $montserrat;
       font-size: 20px;

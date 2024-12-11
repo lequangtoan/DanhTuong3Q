@@ -80,8 +80,8 @@ const Feature = (props) => {
                 src={hoverKey ? hoverKey : item?.tag}
                 className="accordion__content__tag"
                 alt={`tag-${index}`}
-                onMouseEnter={() => setHoverKey(item?.tagActive)}
-                onMouseLeave={() => setHoverKey(null)}
+                // onMouseEnter={() => setHoverKey(item?.tagActive)}
+                // onMouseLeave={() => setHoverKey(null)}
               />
               <img
                 src={item?.feature}

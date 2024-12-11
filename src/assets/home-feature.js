@@ -17,26 +17,26 @@ import tagfeature6 from "./images/Tab_feature/Tab_Normal6.png";
 import tagactivefeature6 from "./images/Tab_feature/Tab_Active6.png";
 import feature6 from "./images/Tab_feature/Feature6.jpg";
 
-export {
-  tagfeature1,
-  tagactivefeature1,
-  feature1,
-  tagfeature2,
-  tagactivefeature2,
-  feature2,
-  tagfeature3,
-  tagactivefeature3,
-  feature3,
-  tagfeature4,
-  tagactivefeature4,
-  feature4,
-  tagfeature5,
-  tagactivefeature5,
-  feature5,
-  tagfeature6,
-  tagactivefeature6,
-  feature6,
-};
+// export {
+//   tagfeature1,
+//   tagactivefeature1,
+//   feature1,
+//   tagfeature2,
+//   tagactivefeature2,
+//   feature2,
+//   tagfeature3,
+//   tagactivefeature3,
+//   feature3,
+//   tagfeature4,
+//   tagactivefeature4,
+//   feature4,
+//   tagfeature5,
+//   tagactivefeature5,
+//   feature5,
+//   tagfeature6,
+//   tagactivefeature6,
+//   feature6,
+// };
 export const homeFeature = [
   {
     tag: tagfeature1,

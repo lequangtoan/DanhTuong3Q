@@ -1,7 +1,6 @@
 @use "../../scss/" as *;
 
 .drawer {
-  height: $header-height;
   position: fixed;
   top: 50%;
   right: 10px;
@@ -13,6 +12,13 @@
   background-image: url(../../assets/images/BG_Frame.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
+
+  // transform: translate(100%, -50%);
+  // transition: transform 0.3s ease-in-out;
+
+  // &.active {
+  //   transform: translate(0, -50%);
+  // }
 
   .drawer__info__app {
     @include flex(flex-start, center);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./drawer.scss";
 import {
@@ -11,9 +11,29 @@ import {
   napthe,
 } from "../../assets/images";
 
-const Drawer = () => {
+const Drawer = ({ isScrolled }) => {
+  // const [isScrolled, setIsScrolled] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const bannerHeight = document.querySelector(".welcome").offsetHeight;
+  //     setIsScrolled(window.scrollY > bannerHeight);
+  //     // setIsScrolled(window.scrollY > 100);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <div className="drawer">
+
+    {/* <div className={`drawer ${isScrolled ? "active" : ""}`}> */}
+      {/* <div className={`drawer__info ${isScrolled ? "active" : ""}`}> */}
+      {/* <div className={`drawer__info ${isScrolled ? "active" : ""}`}> */}
       <div className="drawer__info__app">
         <a className="drawer__icongame" href="##">
           <img src={icongame} alt="" />

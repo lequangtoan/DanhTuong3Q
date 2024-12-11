@@ -1,6 +1,8 @@
 @use "../../../scss/" as *;
 
 .welcome {
+  height: 100vh;
+  
   &__logo {
     position: absolute;
     right: 20rem;
@@ -41,4 +43,3 @@
     }
   }
 }
-
