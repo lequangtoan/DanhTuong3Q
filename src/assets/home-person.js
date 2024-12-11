@@ -223,7 +223,7 @@ export const homePerson = [
   {
     iconactive: iconcamninhactive,
     iconnormal: iconcamninhnormal,
-    name: camninh,
+    name: namecamninh,
     nickName: "camninh",
     contry: "ngo",
     description: `Cam Ninh, tự là Hưng Bá, mãnh tướng Giang Đông, theo Chu Du lập công lớn trong trận Xích Bích, đánh bại quân của Tào Tháo, nhân đó hạ được thành Di Lăng. Tôn Quyền từng ca tụng Tào Tháo có Trương Liêu, ta có Hưng Bá`,
@@ -286,20 +286,20 @@ export const homePerson = [
     bgLarge: vucam,
   },
   {
-    iconactive: iconcamninhactive,
-    iconnormal: iconcamninhnormal,
-    name: camninh,
+    iconactive: icontaothaoactive,
+    iconnormal: icontaothaonormal,
+    name: nametaothao,
     nickName: "taothao",
     contry: "nguy",
     description: `Tào Tháo, tự Mạnh Đức, tên lúc nhỏ là A Man, là nhà chính trị và quân sự kiệt xuất cuối thời Đông Hán. Ông lập nên Tào Ngụy thời Tam Quốc và nổi tiếng với khả năng lãnh đạo xuất sắc cùng tài năng quân sự vượt trội. Tào Tháo là một nhân vật phức tạp, vừa được ca ngợi vừa bị phê phán.`,
     video: "sQ7ALTSC",
     skill: {
-      skill1: skillchudu1,
-      skill2: skillchudu2,
-      skill3: skillchudu3,
-      skill4: skillchudu4,
+      skill1: skilltaothao1,
+      skill2: skilltaothao2,
+      skill3: skilltaothao3,
+      skill4: skilltaothao4,
     },
-    bgLarge: camninh,
+    bgLarge: taothao,
   },
 
   {

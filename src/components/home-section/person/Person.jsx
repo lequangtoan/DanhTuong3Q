@@ -12,21 +12,12 @@ import {
   namecamninh,
   quanvu,
 } from "../../../assets/img-video-person";
-
-import {
-  ngonormal,
-  nguynormal,
-  quannormal,
-  thucnormal,
-} from "../../../assets/images";
-
 const Person = (props) => {
   const [datacontry] = useState(contry);
   const [datahomePerson] = useState(homePerson);
+
   const [isContry, setIsContry] = useState("nguy");
-  const [isPerson, setIsPerson] = useState("chunghoi")
-
-
+  const [isPerson, setIsPerson] = useState("chunghoi");
 
   return (
     <HomeSection
@@ -66,8 +57,11 @@ const Person = (props) => {
                       {datahomePerson?.map((dataperson, index) => (
                         <div
                           className={`swiper__slide ${
-                            isContry === dataperson?.contry ? "swiper__slide__show" : "swiper__slide__hidden"
+                            isContry === dataperson?.contry
+                              ? "swiper__slide__show"
+                              : "swiper__slide__hidden"
                           }`}
+                          onClick={() => setIsPerson(dataperson?.nickName)}
                         >
                           <img
                             src={
@@ -86,35 +80,43 @@ const Person = (props) => {
             ))}
           </div>
         </div>
-        {/* thong tin tuong */}
-        <img
-          className="site__person__bg"
-          src={quanvu}
-          alt="avatar"
-        />
-        <div className="site__person__description">
-          <div className="site__person__description__cv">
-            <img
-              className="site__person__description__cv__name"
-              src={namecamninh}
-              alt="name"
-            />
-          </div>
 
-          <div className="site__person__description__introduction">
-            <p>
-              Đại Kiều là vợ của Tôn Sách, một trong những mỹ nhân thời kỳ Tam
-              Quốc. Cùng em gái Tiểu Kiều được thiên hạ ca tụng là Giang Đông
-              Nhị Kiều.
-            </p>
+        {/* thong tin tuong */}
+
+        {datahomePerson?.map((cvperson, id) => (
+          // <div className="site__person__CV">
+          <div className={`${isPerson === cvperson?.nickName ? "site__person__CV" : "site__person__CV__hidden"}`}>
+            <img
+              className="site__person__CV__bg"
+              // className={`${isPerson === cvperson?.nickName ? "site__person__CV__bg" : "site__person__CV__bg_hidden"}`}
+              src={cvperson?.bgLarge}
+              alt="avatar"
+            />
+
+            <div className="site__person__CV__description">
+              <div className="site__person__CV__description__cv">
+                <img
+                  className="site__person__CV__description__cv__name"
+                  src={cvperson?.name}
+                  alt={`avatar-${id}`}
+                />
+              </div>
+              <div className="site__person__CV__description__introduction">
+                <p>
+                  {cvperson?.description}
+                </p>
+              </div>
+              <div className="site__person__CV__description__skill">
+                <img src={cvperson?.skill.skill1}/>
+                <img src={cvperson?.skill.skill2}/>
+                <img src={cvperson?.skill.skill3}/>
+                <img src={cvperson?.skill.skill4}/>
+              </div>
+              <div className="site__person__CV__description__video">
+              </div>
+            </div>
           </div>
-          <div className="site__person__description__skill"></div>
-          <div className="site__person__description__video">
-            {/* <video autoplay>
-              <source src={BgFrame1} type="video/mp4" />
-            </video> */}
-          </div>
-        </div>
+        ))}
       </div>
     </HomeSection>
   );
