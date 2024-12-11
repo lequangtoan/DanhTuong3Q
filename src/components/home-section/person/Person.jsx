@@ -7,11 +7,6 @@ import HomeSection from "../HomeSection";
 import { BgFrame3 } from "../../../assets/videos";
 import { contry, homePerson } from "../../../assets/home-person";
 
-import {
-  iconcamninhactive,
-  namecamninh,
-  quanvu,
-} from "../../../assets/img-video-person";
 const Person = (props) => {
   const [datacontry] = useState(contry);
   const [datahomePerson] = useState(homePerson);
@@ -82,13 +77,16 @@ const Person = (props) => {
         </div>
 
         {/* thong tin tuong */}
-
         {datahomePerson?.map((cvperson, id) => (
-          // <div className="site__person__CV">
-          <div className={`${isPerson === cvperson?.nickName ? "site__person__CV" : "site__person__CV__hidden"}`}>
+          <div
+            className={`${
+              isPerson === cvperson?.nickName
+                ? "site__person__CV"
+                : "site__person__CV__hidden"
+            }`}
+          >
             <img
               className="site__person__CV__bg"
-              // className={`${isPerson === cvperson?.nickName ? "site__person__CV__bg" : "site__person__CV__bg_hidden"}`}
               src={cvperson?.bgLarge}
               alt="avatar"
             />
@@ -102,18 +100,27 @@ const Person = (props) => {
                 />
               </div>
               <div className="site__person__CV__description__introduction">
-                <p>
-                  {cvperson?.description}
-                </p>
+                <p>{cvperson?.description}</p>
               </div>
               <div className="site__person__CV__description__skill">
-                <img src={cvperson?.skill.skill1}/>
-                <img src={cvperson?.skill.skill2}/>
-                <img src={cvperson?.skill.skill3}/>
-                <img src={cvperson?.skill.skill4}/>
+                <img
+                  src={cvperson?.skill.skill1}
+                  alt={`avatar-${cvperson?.skill.skill1}`}
+                />
+                <img
+                  src={cvperson?.skill.skill2}
+                  alt={`avatar-${cvperson?.skill.skill2}`}
+                />
+                <img
+                  src={cvperson?.skill.skill3}
+                  alt={`avatar-${cvperson?.skill.skill3}`}
+                />
+                <img
+                  src={cvperson?.skill.skill4}
+                  alt={`avatar-${cvperson?.skill.skill4}`}
+                />
               </div>
-              <div className="site__person__CV__description__video">
-              </div>
+              <div className="site__person__CV__description__video"></div>
             </div>
           </div>
         ))}
