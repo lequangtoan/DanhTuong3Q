@@ -20,7 +20,7 @@ const swiperOptions = {
   spaceBetween: 0,
   mousewheel: true,
   pagination: true,
-  effect: "fade",
+  // effect: "fade",
   // speed: 5000,
 };
 
