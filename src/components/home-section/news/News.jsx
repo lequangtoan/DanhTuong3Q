@@ -1,27 +1,18 @@
 import "./news.scss";
 
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Autoplay } from "swiper/modules";
+import React, { useState, useEffect } from "react";
 
 import HomeSection from "../HomeSection";
-import Button from "../../button/Button";
+
+import { btnNew } from "../../../assets/images/Button/home_new/home-new";
 
 import { BgFrame2 } from "../../../assets/videos";
 import { buttonxemthem, stick, test } from "../../../assets/images";
 
-const swiperOptions = {
-  modules: [EffectFade, Autoplay],
-  direction: "vertical",
-  slidesPerView: 1,
-  spaceBetween: 0,
-  // pagination: true,
-  // effect: "fade",
-  autoplay: 1000,
-  speed: 1000,
-};
-
 const News = (props) => {
+  const [isTabs, setIsTabs] = useState("tatca");
+  const [isBtnHover, setIsBtnHover] = useState(null);
+
   return (
     <HomeSection
       className={`new ${props.isActive ? "active" : ""}`}
@@ -29,75 +20,114 @@ const News = (props) => {
       bgImage={BgFrame2}
     >
       <div className="site__news">
-        <div class="site__news__title"></div>
-        <div class="site__news__center">
-          <ul class="site__tabs">
-            <li>
-              <Button className={"button__item__active"}>Tất cả</Button>
-            </li>
-            <li>
-              <Button className={"button__item"}>Tin tức</Button>
-            </li>
-            <li>
-              <Button className={"button__item"}>Sự kiện</Button>
-            </li>
-            <li>
-              <Button className={"button__item"}>Cẩm nang</Button>
-            </li>
+        <div className="site__news__title"></div>
+        <div className="site__news__center">
+          <ul className="site__news__center__tabs">
+            {btnNew?.map((btn, id) => (
+              <li
+                className={`site__news__center__tabs__item ${
+                  isTabs === btn?.namebtn ? "new__tabs__item__active" : ""
+                }`}
+                key={id}
+                onClick={() => setIsTabs(btn?.namebtn)}
+              >
+                <img
+                  src={
+                    isTabs === btn?.namebtn
+                      ? btn?.active
+                      : isBtnHover === btn?.active
+                      ? isBtnHover
+                      : btn?.normal
+                  }
+                  alt={`btn-${btn?.namebtn}`}
+                  onMouseEnter={() => setIsBtnHover(btn?.active)}
+                  onMouseLeave={() => setIsBtnHover(null)}
+                />
+              </li>
+            ))}
           </ul>
-          <div className="site__news__content">
-            <div className="site__news__swiper">
-              <img src={test} alt="" />
+          <div className="site__news__center__content">
+            <div className="site__news__center__content__swiper">
+              <img
+                src={test}
+                alt={`image-${test}`}
+              />
             </div>
-            <div className="site__news__list">
-              <ul className="site__news__list__content">
-                <li className="site__slide__in">
-                  <p>
-                    <div className="site__slide__in__dot">
-                      <img src={stick} alt="" />
+            <div className="site__news__center__content__list">
+              <ul className="site__news__center__content__list__title">
+                <li className="site__news__slide__in">
+                  <p className="site__news__slide__in__content">
+                    <div className="site__news__slide__in__content__dot">
+                      <img
+                        src={stick}
+                        alt=""
+                      />
                     </div>
-                    <span className="site__slide__in__title">
+                    <span className="site__news__slide__in__content__title">
                       Khai mở mái chủ mới thanh phong kiem danh tuong 3q
                     </span>
                   </p>
-                  <span className="site__slide__in__time">01__01__1111</span>
+                  <span className="site__news__slide__in__time">
+                    01__01__1111
+                  </span>
                 </li>
-                <li className="site__slide__in">
-                  <p>
-                    <div className="site__slide__in__dot">
-                      <img src={stick} alt="" />
+
+                <li className="site__news__slide__in">
+                  <p className="site__news__slide__in__content">
+                    <div className="site__news__slide__in__content__dot">
+                      <img
+                        src={stick}
+                        alt=""
+                      />
                     </div>
-                    <span className="site__slide__in__title">
-                      Khai mở mái chủ mới
+                    <span className="site__news__slide__in__content__title">
+                      Khai mở mái chủ mới thanh phong kiem danh tuong 3q
                     </span>
                   </p>
-                  <span className="site__slide__in__time">01__01__1111</span>
+                  <span className="site__news__slide__in__time">
+                    01__01__1111
+                  </span>
                 </li>
-                <li className="site__slide__in">
-                  <p>
-                    <div className="site__slide__in__dot">
-                      <img src={stick} alt="" />
+
+                <li className="site__news__slide__in">
+                  <p className="site__news__slide__in__content">
+                    <div className="site__news__slide__in__content__dot">
+                      <img
+                        src={stick}
+                        alt=""
+                      />
                     </div>
-                    <span className="site__slide__in__title">
-                      Khai mở mái chủ mới
+                    <span className="site__news__slide__in__content__title">
+                      Khai mở mái chủ mới thanh phong kiem danh tuong 3q
                     </span>
                   </p>
-                  <span className="site__slide__in__time">01__01__1111</span>
+                  <span className="site__news__slide__in__time">
+                    01__01__1111
+                  </span>
                 </li>
-                <li className="site__slide__in">
-                  <p>
-                    <div className="site__slide__in__dot">
-                      <img src={stick} alt="" />
+
+                <li className="site__news__slide__in">
+                  <p className="site__news__slide__in__content">
+                    <div className="site__news__slide__in__content__dot">
+                      <img
+                        src={stick}
+                        alt=""
+                      />
                     </div>
-                    <span className="site__slide__in__title">
-                      Khai mở mái chủ mới
+                    <span className="site__news__slide__in__content__title">
+                      Khai mở mái chủ mới thanh phong kiem danh tuong 3q
                     </span>
                   </p>
-                  <span className="site__slide__in__time">01__01__1111</span>
+                  <span className="site__news__slide__in__time">
+                    01__01__1111
+                  </span>
                 </li>
               </ul>
-              <div className="site__news__list__more-link">
-                <img src={buttonxemthem} alt="" />
+              <div className="site__news__center__content__list__more-link">
+                <img
+                  src={buttonxemthem}
+                  alt=""
+                />
               </div>
             </div>
           </div>

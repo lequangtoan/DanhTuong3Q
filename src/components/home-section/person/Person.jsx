@@ -90,7 +90,7 @@ const Person = (props) => {
             <img
               className="site__person__CV__bg"
               src={cvperson?.bgLarge}
-              alt="avatar"
+              alt={`avatar-${id}`}
             />
 
             <div className="site__person__CV__description">
@@ -98,7 +98,7 @@ const Person = (props) => {
                 <img
                   className="site__person__CV__description__cv__name"
                   src={cvperson?.name}
-                  alt={`avatar-${id}`}
+                  alt={`name-${id}`}
                 />
               </div>
               <div className="site__person__CV__description__introduction">
@@ -107,19 +107,19 @@ const Person = (props) => {
               <div className="site__person__CV__description__skill">
                 <img
                   src={cvperson?.skill.skill1}
-                  alt={`avatar-${cvperson?.skill.skill1}`}
+                  alt={`skill-${cvperson?.skill.skill1}`}
                 />
                 <img
                   src={cvperson?.skill.skill2}
-                  alt={`avatar-${cvperson?.skill.skill2}`}
+                  alt={`skill-${cvperson?.skill.skill2}`}
                 />
                 <img
                   src={cvperson?.skill.skill3}
-                  alt={`avatar-${cvperson?.skill.skill3}`}
+                  alt={`skill-${cvperson?.skill.skill3}`}
                 />
                 <img
                   src={cvperson?.skill.skill4}
-                  alt={`avatar-${cvperson?.skill.skill4}`}
+                  alt={`skill-${cvperson?.skill.skill4}`}
                 />
               </div>
               <div className="site__person__CV__description__video"></div>
