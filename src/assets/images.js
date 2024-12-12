@@ -31,14 +31,7 @@ import tinhnangdacsac from "./images/Tinh_Nang_Dac_Sac.png";
 
 import danhtuongtamquoc from "./images/Danh_Tuong_Tam_Quoc.png";
 import footage from "./images/Footage.png";
-import nguynormal from "./images/Ngụy_Normal.png";
-import nguyactive from "./images/Ngụy_Active.png";
-import thucnormal from "./images/Thục_Normal.png";
-import thucactive from "./images/Thục_Active.png";
-import ngonormal from "./images/Ngô_Normal.png";
-import ngoactive from "./images/Ngô_Active.png";
-import quannormal from "./images/Quần_Normal.png";
-import quanactive from "./images/Quần_Active.png";
+
 
 import test from "./images/text.jpg";
 import test1 from "./images/test1.png";
@@ -74,12 +67,4 @@ export {
   tinhnangdacsac,
   danhtuongtamquoc,
   footage,
-  nguynormal,
-  nguyactive,
-  thucnormal,
-  thucactive,
-  ngonormal,
-  ngoactive,
-  quannormal,
-  quanactive,
 };

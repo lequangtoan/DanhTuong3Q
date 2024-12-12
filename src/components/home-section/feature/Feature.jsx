@@ -46,8 +46,7 @@ const Feature = (props) => {
         setSize({ width: clientWidth, height: clientHeight });
       }
     }, 2000);
-
-    // Ensure it runs once on mount
+    
     const runResizeHandler = () => {
       requestAnimationFrame(resizeHandler);
     };

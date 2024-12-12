@@ -27,8 +27,8 @@
     width: 120rem;
     position: absolute;
     z-index: 5;
-    top: 14.5rem;
-    left: 17rem;
+    top: 14.25rem;
+    left: 18rem;
 
     &__tab {
       @include flex(flex-start, space-between);
@@ -46,8 +46,8 @@
           width: auto;
           height: 28.5rem;
           overflow: hidden;
-          margin-top: -3.5rem;
-          padding-top: 3.5rem;
+          margin-top: -2.9rem;
+          padding-top: 2.25rem;
           background: url(../../../assets/images/Slide_Char.png) no-repeat;
           background-size: 100% 100%;
 
@@ -59,7 +59,7 @@
               position: relative;
               width: auto;
               height: 85px;
-              margin: 5px 0;
+              margin: 10px 0;
             }
 
             .active:before {

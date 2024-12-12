@@ -1,150 +1,157 @@
 //quốc gia
-import {
-  ngoactive,
-  ngonormal,
-  nguyactive,
-  nguynormal,
-  quanactive,
-  quannormal,
-  thucactive,
-  thucnormal,
-} from "./images";
+import nguynormal from "./images/Ngụy_Normal.png";
+import nguyactive from "./images/Ngụy_Active.png";
+import thucnormal from "./images/Thục_Normal.png";
+import thucactive from "./images/Thục_Active.png";
+import ngonormal from "./images/Ngô_Normal.png";
+import ngoactive from "./images/Ngô_Active.png";
+import quannormal from "./images/Quần_Normal.png";
+import quanactive from "./images/Quần_Active.png";
 
 //tuong
-import {
-  //ngo
-  iconcamninhactive,
-  iconcamninhnormal,
-  camninh,
-  namecamninh,
-  skillcamninh1,
-  skillcamninh2,
-  skillcamninh3,
-  skillcamninh4,
-  iconchuduactive,
-  iconchudunormal,
-  chudu,
-  namechudu,
-  skillchudu1,
-  skillchudu2,
-  skillchudu3,
-  skillchudu4,
-  icondaikieuactive,
-  icondaikieunormal,
-  daikieu,
-  namedaikieu,
-  skilldaikieu1,
-  skilldaikieu2,
-  skilldaikieu3,
-  skilldaikieu4,
-  icontonsachactive,
-  icontonsachnormal,
-  tonsach,
-  nametonsach,
-  skilltonsach1,
-  skilltonsach2,
-  skilltonsach3,
-  skilltonsach4,
-  //nguy
-  iconchunghoiactive,
-  iconchunghoinormal,
-  chunghoi,
-  namechunghoi,
-  skillchunghoi1,
-  skillchunghoi2,
-  skillchunghoi3,
-  skillchunghoi4,
-  iconquachgiaactive,
-  iconquachgianormal,
-  quachgia,
-  namequachgia,
-  skillquachgia1,
-  skillquachgia2,
-  skillquachgia3,
-  skillquachgia4,
-  icontaothaoactive,
-  icontaothaonormal,
-  taothao,
-  nametaothao,
-  skilltaothao1,
-  skilltaothao2,
-  skilltaothao3,
-  skilltaothao4,
-  iconvucamactive,
-  iconvucamnormal,
-  vucam,
-  namevucam,
-  skillvucam1,
-  skillvucam2,
-  skillvucam3,
-  skillvucam4,
-  //quan
-  icondieuthuyenactive,
-  icondieuthuyennormal,
-  dieuthuyen,
-  namedieuthuyen,
-  skilldieuthuyen1,
-  skilldieuthuyen2,
-  skilldieuthuyen3,
-  skilldieuthuyen4,
-  iconhoadaactive,
-  iconhoadanormal,
-  hoada,
-  namehoada,
-  skillhoada1,
-  skillhoada2,
-  skillhoada3,
-  skillhoada4,
-  iconluboactive,
-  iconlubonormal,
-  lubo,
-  namelubo,
-  skilllubo1,
-  skilllubo2,
-  skilllubo3,
-  skilllubo4,
-  icontrancungactive,
-  icontrancungnormal,
-  trancung,
-  nametrancung,
-  skilltrancung1,
-  skilltrancung2,
-  skilltrancung3,
-  skilltrancung4,
-  //thuc
-  icongiacacluongactive,
-  icongiacacluongnormal,
-  giacacluong,
-  namegiacacluong,
-  skillgiacacluong1,
-  skillgiacacluong2,
-  skillgiacacluong3,
-  skillgiacacluong4,
-  iconkhuongduyactive,
-  iconkhuongduynormal,
-  khuongduy,
-  namekhuongduy,
-  skillkhuongduy1,
-  skillkhuongduy2,
-  skillkhuongduy3,
-  skillkhuongduy4,
-  iconnguydienactive,
-  iconnguydiennormal,
-  nguydien,
-  namenguydien,
-  skillnguydien1,
-  skillnguydien2,
-  skillnguydien3,
-  skillnguydien4,
-  iconquanvuactive,
-  iconquanvunormal,
-  quanvu,
-  namequanvu,
-  skillquanvu1,
-  skillquanvu2,
-  skillquanvu3,
-  skillquanvu4,
-} from "./img-video-person";
+import iconcamninhactive from "./images/Ngô/Cam_Ninh/Cam_Ninh_Active.png";
+import iconcamninhnormal from "./images/Ngô/Cam_Ninh/Cam_Ninh_Normal.png";
+import camninh from "./images/Ngô/Cam_Ninh/Cam_Ninh.png";
+import namecamninh from "./images/Ngô/Cam_Ninh/Text_Cam_Ninh.png";
+import skillcamninh1 from "./images/Ngô/Cam_Ninh/Skill_1_Cam_Ninh.png";
+import skillcamninh2 from "./images/Ngô/Cam_Ninh/Skill_2_Cam_Ninh.png";
+import skillcamninh3 from "./images/Ngô/Cam_Ninh/Skill_3_Cam_Ninh.png";
+import skillcamninh4 from "./images/Ngô/Cam_Ninh/Skill_4_Cam_Ninh.png";
+
+import iconchuduactive from "./images/Ngô/Chu_Du/Chu_Du_Active.png";
+import iconchudunormal from "./images/Ngô/Chu_Du/Chu_Du_Normal.png";
+import chudu from "./images/Ngô/Chu_Du/Chu_Du.png";
+import namechudu from "./images/Ngô/Chu_Du/Text_Chu_Du.png";
+import skillchudu1 from "./images/Ngô/Chu_Du/Skill_1_Chu_Du.png";
+import skillchudu2 from "./images/Ngô/Chu_Du/Skill_2_Chu_Du.png";
+import skillchudu3 from "./images/Ngô/Chu_Du/Skill_3_Chu_Du.png";
+import skillchudu4 from "./images/Ngô/Chu_Du/Skill_4_Chu_Du.png";
+
+import icondaikieuactive from "./images/Ngô/Đại_Kiều/Đại_Kiều_Active.png";
+import icondaikieunormal from "./images/Ngô/Đại_Kiều/Đại_Kiều_Normal.png";
+import daikieu from "./images/Ngô/Đại_Kiều/Đại_Kiều.png";
+import namedaikieu from "./images/Ngô/Đại_Kiều/Text_Đại_Kiều.png";
+import skilldaikieu1 from "./images/Ngô/Đại_Kiều/Skill_1_Đại_Kiều.png";
+import skilldaikieu2 from "./images/Ngô/Đại_Kiều/Skill_2_Đại_Kiều.png";
+import skilldaikieu3 from "./images/Ngô/Đại_Kiều/Skill_3_Đại_Kiều.png";
+import skilldaikieu4 from "./images/Ngô/Đại_Kiều/Skill_4_Đại_Kiều.png";
+
+import icontonsachactive from "./images/Ngô/Tôn_Sách/Tôn_Sách_Active.png";
+import icontonsachnormal from "./images/Ngô/Tôn_Sách/Tôn_Sách_Normal.png";
+import tonsach from "./images/Ngô/Tôn_Sách/Tôn_Sách.png";
+import nametonsach from "./images/Ngô/Tôn_Sách/Text_Tôn_Sách.png";
+import skilltonsach1 from "./images/Ngô/Tôn_Sách/Skill_1_Tôn_Sách.png";
+import skilltonsach2 from "./images/Ngô/Tôn_Sách/Skill_2_Tôn_Sách.png";
+import skilltonsach3 from "./images/Ngô/Tôn_Sách/Skill_3_Tôn_Sách.png";
+import skilltonsach4 from "./images/Ngô/Tôn_Sách/Skill_4_Tôn_Sách.png";
+
+import iconchunghoiactive from "./images/Ngụy/Chung_Hội/Chung_Hội_Active.png";
+import iconchunghoinormal from "./images/Ngụy/Chung_Hội/Chung_Hội_Normal.png";
+import chunghoi from "./images/Ngụy/Chung_Hội/Chung_Hội.png";
+import namechunghoi from "./images/Ngụy/Chung_Hội/Text_Chung_Hội.png";
+import skillchunghoi1 from "./images/Ngụy/Chung_Hội/Skill_1_Chung_Hội.png";
+import skillchunghoi2 from "./images/Ngụy/Chung_Hội/Skill_2_Chung_Hội.png";
+import skillchunghoi3 from "./images/Ngụy/Chung_Hội/Skill_3_Chung_Hội.png";
+import skillchunghoi4 from "./images/Ngụy/Chung_Hội/Skill_4_Chung_Hội.png";
+
+import iconquachgiaactive from "./images/Ngụy/Quách_Gia/Quách_Gia_Active.png";
+import iconquachgianormal from "./images/Ngụy/Quách_Gia/Quách_Gia_Normal.png";
+import quachgia from "./images/Ngụy/Quách_Gia/Quách_Gia.png";
+import namequachgia from "./images/Ngụy/Quách_Gia/Text_Quách_Gia.png";
+import skillquachgia1 from "./images/Ngụy/Quách_Gia/Skill_1_Quách_Gia.png";
+import skillquachgia2 from "./images/Ngụy/Quách_Gia/Skill_2_Quách_Gia.png";
+import skillquachgia3 from "./images/Ngụy/Quách_Gia/Skill_3_Quách_Gia.png";
+import skillquachgia4 from "./images/Ngụy/Quách_Gia/Skill_4_Quách_Gia.png";
+
+import icontaothaoactive from "./images/Ngụy/Tào_Tháo/Tào_Tháo_Active.png";
+import icontaothaonormal from "./images/Ngụy/Tào_Tháo/Tào_Tháo_Normal.png";
+import taothao from "./images/Ngụy/Tào_Tháo/Tào_Tháo.png";
+import nametaothao from "./images/Ngụy/Tào_Tháo/Text_Tào_Tháo.png";
+import skilltaothao1 from "./images/Ngụy/Tào_Tháo/Skill_1_Tào_Tháo.png";
+import skilltaothao2 from "./images/Ngụy/Tào_Tháo/Skill_2_Tào_Tháo.png";
+import skilltaothao3 from "./images/Ngụy/Tào_Tháo/Skill_3_Tào_Tháo.png";
+import skilltaothao4 from "./images/Ngụy/Tào_Tháo/Skill_4_Tào_Tháo.png";
+
+import iconvucamactive from "./images/Ngụy/Vu_Cấm/Vu_Cấm_Active.png";
+import iconvucamnormal from "./images/Ngụy/Vu_Cấm/Vu_Cấm_Normal.png";
+import vucam from "./images/Ngụy/Vu_Cấm/Vu_Cấm.png";
+import namevucam from "./images/Ngụy/Vu_Cấm/Text_Vu_Cấm.png";
+import skillvucam1 from "./images/Ngụy/Vu_Cấm/Skill_1_Vu_Cấm.png";
+import skillvucam2 from "./images/Ngụy/Vu_Cấm/Skill_2_Vu_Cấm.png";
+import skillvucam3 from "./images/Ngụy/Vu_Cấm/Skill_3_Vu_Cấm.png";
+import skillvucam4 from "./images/Ngụy/Vu_Cấm/Skill_4_Vu_Cấm.png";
+
+import icondieuthuyenactive from "./images/Quần/Điêu_Thuyền/Điêu_Thuyền_Active.png";
+import icondieuthuyennormal from "./images/Quần/Điêu_Thuyền/Điêu_Thuyền_Normal.png";
+import dieuthuyen from "./images/Quần/Điêu_Thuyền/Điêu_Thuyền.png";
+import namedieuthuyen from "./images/Quần/Điêu_Thuyền/Text_Điêu_Thuyền.png";
+import skilldieuthuyen1 from "./images/Quần/Điêu_Thuyền/Skill_1_Điêu_Thuyền.png";
+import skilldieuthuyen2 from "./images/Quần/Điêu_Thuyền/Skill_2_Điêu_Thuyền.png";
+import skilldieuthuyen3 from "./images/Quần/Điêu_Thuyền/Skill_3_Điêu_Thuyền.png";
+import skilldieuthuyen4 from "./images/Quần/Điêu_Thuyền/Skill_4_Điêu_Thuyền.png";
+
+import iconhoadaactive from "./images/Quần/Hoa_Đà/Hoa_Đà_Active.png";
+import iconhoadanormal from "./images/Quần/Hoa_Đà/Hoa_Đà_Normal.png";
+import hoada from "./images/Quần/Hoa_Đà/Hoa_Đà.png";
+import namehoada from "./images/Quần/Hoa_Đà/Text_Hoa_Đà.png";
+import skillhoada1 from "./images/Quần/Hoa_Đà/Skill_1_Hoa_Đà.png";
+import skillhoada2 from "./images/Quần/Hoa_Đà/Skill_2_Hoa_Đà.png";
+import skillhoada3 from "./images/Quần/Hoa_Đà/Skill_3_Hoa_Đà.png";
+import skillhoada4 from "./images/Quần/Hoa_Đà/Skill_4_Hoa_Đà.png";
+
+import iconluboactive from "./images/Quần/Lữ_Bố/Lữ_Bố_Active.png";
+import iconlubonormal from "./images/Quần/Lữ_Bố/Lữ_Bố_Normal.png";
+import lubo from "./images/Quần/Lữ_Bố/Lữ_Bố.png";
+import namelubo from "./images/Quần/Lữ_Bố/Text_Lữ_Bố.png";
+import skilllubo1 from "./images/Quần/Lữ_Bố/Skill_1_Lữ_Bố.png";
+import skilllubo2 from "./images/Quần/Lữ_Bố/Skill_2_Lữ_Bố.png";
+import skilllubo3 from "./images/Quần/Lữ_Bố/Skill_3_Lữ_Bố.png";
+import skilllubo4 from "./images/Quần/Lữ_Bố/Skill_4_Lữ_Bố.png";
+
+import icontrancungactive from "./images/Quần/Trần_Cung/Trần_Cung_Active.png";
+import icontrancungnormal from "./images/Quần/Trần_Cung/Trần_Cung_Normal.png";
+import trancung from "./images/Quần/Trần_Cung/Trần_Cung.png";
+import nametrancung from "./images/Quần/Trần_Cung/Text_Trần_Cung.png";
+import skilltrancung1 from "./images/Quần/Trần_Cung/Skill_1_Trần_Cung.png";
+import skilltrancung2 from "./images/Quần/Trần_Cung/Skill_2_Trần_Cung.png";
+import skilltrancung3 from "./images/Quần/Trần_Cung/Skill_3_Trần_Cung.png";
+import skilltrancung4 from "./images/Quần/Trần_Cung/Skill_4_Trần_Cung.png";
+
+import icongiacacluongactive from "./images/Thục/Gia_Cát_Lượng/Gia_Cát_Lượng_Active.png";
+import icongiacacluongnormal from "./images/Thục/Gia_Cát_Lượng/Gia_Cát_Lượng_Normal.png";
+import giacacluong from "./images/Thục/Gia_Cát_Lượng/Gia_Cát_Lượng.png";
+import namegiacacluong from "./images/Thục/Gia_Cát_Lượng/Text_Gia_Cát_Lượng.png";
+import skillgiacacluong1 from "./images/Thục/Gia_Cát_Lượng/Skill_1_Gia_Cát_Lượng.png";
+import skillgiacacluong2 from "./images/Thục/Gia_Cát_Lượng/Skill_2_Gia_Cát_Lượng.png";
+import skillgiacacluong3 from "./images/Thục/Gia_Cát_Lượng/Skill_3_Gia_Cát_Lượng.png";
+import skillgiacacluong4 from "./images/Thục/Gia_Cát_Lượng/Skill_4_Gia_Cát_Lượng.png";
+
+import iconkhuongduyactive from "./images/Thục/Khương_Duy/Khương_Duy_Active.png";
+import iconkhuongduynormal from "./images/Thục/Khương_Duy/Khương_Duy_Normal.png";
+import khuongduy from "./images/Thục/Khương_Duy/Khương_Duy.png";
+import namekhuongduy from "./images/Thục/Khương_Duy/Text_Khương_Duy.png";
+import skillkhuongduy1 from "./images/Thục/Khương_Duy/Skill_1_Khương_Duy.png";
+import skillkhuongduy2 from "./images/Thục/Khương_Duy/Skill_2_Khương_Duy.png";
+import skillkhuongduy3 from "./images/Thục/Khương_Duy/Skill_3_Khương_Duy.png";
+import skillkhuongduy4 from "./images/Thục/Khương_Duy/Skill_4_Khương_Duy.png";
+
+import iconnguydienactive from "./images/Thục/Ngụy_Diên/Ngụy_Diên_Active.png";
+import iconnguydiennormal from "./images/Thục/Ngụy_Diên/Ngụy_Diên_Normal.png";
+import nguydien from "./images/Thục/Ngụy_Diên/Ngụy_Diên.png";
+import namenguydien from "./images/Thục/Ngụy_Diên/Text_Ngụy_Diên.png";
+import skillnguydien1 from "./images/Thục/Ngụy_Diên/Skill_1_Ngụy_Diên.png";
+import skillnguydien2 from "./images/Thục/Ngụy_Diên/Skill_2_Ngụy_Diên.png";
+import skillnguydien3 from "./images/Thục/Ngụy_Diên/Skill_3_Ngụy_Diên.png";
+import skillnguydien4 from "./images/Thục/Ngụy_Diên/Skill_4_Ngụy_Diên.png";
+
+import iconquanvuactive from "./images/Thục/Quan_Vũ/Quan_Vũ_Active.png";
+import iconquanvunormal from "./images/Thục/Quan_Vũ/Quan_Vũ_Normal.png";
+import quanvu from "./images/Thục/Quan_Vũ/Quan_Vũ.png";
+import namequanvu from "./images/Thục/Quan_Vũ/Text_Quan_Vũ.png";
+import skillquanvu1 from "./images/Thục/Quan_Vũ/Skill_1_Quan_Vũ.png";
+import skillquanvu2 from "./images/Thục/Quan_Vũ/Skill_2_Quan_Vũ.png";
+import skillquanvu3 from "./images/Thục/Quan_Vũ/Skill_3_Quan_Vũ.png";
+import skillquanvu4 from "./images/Thục/Quan_Vũ/Skill_4_Quan_Vũ.png";
 
 //quoc gia
 export const contry = [
@@ -153,15 +160,16 @@ export const contry = [
     active: nguyactive,
     normal: nguynormal,
   },
-  {
-    contryname: "ngo",
-    active: ngoactive,
-    normal: ngonormal,
-  },
+
   {
     contryname: "thuc",
     active: thucactive,
     normal: thucnormal,
+  },
+  {
+    contryname: "ngo",
+    active: ngoactive,
+    normal: ngonormal,
   },
   {
     contryname: "quan",
@@ -172,71 +180,6 @@ export const contry = [
 
 //tuong
 export const homePerson = [
-  {
-    iconactive: icondaikieuactive,
-    iconnormal: icondaikieunormal,
-    name: namedaikieu,
-    nickName: "daikieu",
-    contry: "ngo",
-    description: `Đại Kiều là vợ của Tôn Sách, một trong những mỹ nhân thời kỳ Tam Quốc. Cùng em gái Tiểu Kiều được thiên hạ ca tụng là Giang Đông Nhị Kiều.`,
-    video: "sQ7ALTdSC",
-    skill: {
-      skill1: skilldaikieu1,
-      skill2: skilldaikieu2,
-      skill3: skilldaikieu3,
-      skill4: skilldaikieu4,
-    },
-    bgLarge: daikieu,
-  },
-  {
-    iconactive: iconchuduactive,
-    iconnormal: iconchudunormal,
-    name: namechudu,
-    nickName: "chudu",
-    contry: "ngo",
-    description: `Chu Du, tên tự Công Cẩn, đương thời gọi Chu Lang, là danh tướng và khai quốc công thần của nước Đông Ngô. Chu Du nổi tiếng với chiến thắng ở Trận Xích Bích trước quân Tào Tháo.`,
-    video: "sQ7ALTdSC",
-    skill: {
-      skill1: skillchudu1,
-      skill2: skillchudu2,
-      skill3: skillchudu3,
-      skill4: skillchudu4,
-    },
-    bgLarge: chudu,
-  },
-  {
-    iconactive: icontonsachactive,
-    iconnormal: icontonsachnormal,
-    name: nametonsach,
-    nickName: "tonsach",
-    contry: "ngo",
-    description: `Tôn Sách, tự Bá Phù, là một viên tướng và một lãnh chúa trong thời kỳ cuối của Đông Hán. Ông là người đặt nền móng quan trọng trong việc hình thành nên Đông Ngô, đã được người em trai Tôn Quyền kế thừa và hoàn thiện sau khi ông mất.`,
-    video: "sQ7ALTSC",
-    skill: {
-      skill1: skilltonsach1,
-      skill2: skilltonsach2,
-      skill3: skilltonsach3,
-      skill4: skilltonsach4,
-    },
-    bgLarge: tonsach,
-  },
-  {
-    iconactive: iconcamninhactive,
-    iconnormal: iconcamninhnormal,
-    name: namecamninh,
-    nickName: "camninh",
-    contry: "ngo",
-    description: `Cam Ninh, tự là Hưng Bá, mãnh tướng Giang Đông, theo Chu Du lập công lớn trong trận Xích Bích, đánh bại quân của Tào Tháo, nhân đó hạ được thành Di Lăng. Tôn Quyền từng ca tụng Tào Tháo có Trương Liêu, ta có Hưng Bá`,
-    video: "sQ7ALTSC",
-    skill: {
-      skill1: skillcamninh1,
-      skill2: skillcamninh2,
-      skill3: skillcamninh3,
-      skill4: skillcamninh4,
-    },
-    bgLarge: camninh,
-  },
-
   {
     iconactive: iconchunghoiactive,
     iconnormal: iconchunghoinormal,
@@ -301,72 +244,6 @@ export const homePerson = [
     },
     bgLarge: taothao,
   },
-
-  {
-    iconactive: icontrancungactive,
-    iconnormal: icontonsachnormal,
-    name: nametrancung,
-    nickName: "trancung",
-    contry: "quan",
-    description: `Trần Cung, tên tự là Công Đài, từng theo Tào Tháo, sau làm mưu sĩ cho Lữ Bố đầu thời Tam Quốc. Lữ Bố chiến bại, Trần Cung không chịu hàng Tào nên Tào Tháo đành gạt nước mắt mà xử tử.`,
-    video: "sQ7ALTSC",
-    skill: {
-      skill1: skilltrancung1,
-      skill2: skilltrancung2,
-      skill3: skilltrancung3,
-      skill4: skilltrancung4,
-    },
-    bgLarge: trancung,
-  },
-  {
-    iconactive: iconhoadaactive,
-    iconnormal: iconhoadanormal,
-    name: namehoada,
-    nickName: "hoada",
-    contry: "quan",
-    description: `Hoa Đà, tự Nguyên Hóa, tinh thông y thuật, là một thầy thuốc nổi tiếng thời cuối Đông Hán và đầu thời Tam Quốc. Ông được xưng tụng như một Thần y nổi tiếng.`,
-    video: "sQ7ALTSC",
-    skill: {
-      skill1: skillhoada1,
-      skill2: skillhoada2,
-      skill3: skillhoada3,
-      skill4: skillhoada4,
-    },
-    bgLarge: hoada,
-  },
-  {
-    iconactive: icondieuthuyenactive,
-    iconnormal: icondieuthuyennormal,
-    name: namedieuthuyen,
-    nickName: "dieuthuyen",
-    contry: "quan",
-    description: `Điêu Thuyền, một trong tứ đại mỹ nhân, nghĩa nữ của Vương Doãn, để đền ơn nghĩa phụ đã tình nguyện hiến thân hoàn thành liên hoàn kế diệt Đổng Trác.`,
-    video: "sQ7ALTSC",
-    skill: {
-      skill1: skilldieuthuyen1,
-      skill2: skilldieuthuyen2,
-      skill3: skilldieuthuyen3,
-      skill4: skilldieuthuyen4,
-    },
-    bgLarge: dieuthuyen,
-  },
-  {
-    iconactive: iconluboactive,
-    iconnormal: iconlubonormal,
-    name: namelubo,
-    nickName: "lubo",
-    contry: "quan",
-    description: `Lữ Bố tự là Phụng Tiên, mãnh tướng số một tam quốc, cưỡi Xích Thổ, tay cầm Phương Thiên Kích, được ca tụng là chiến thần.`,
-    video: "sQ7ALTSC",
-    skill: {
-      skill1: skilllubo1,
-      skill2: skilllubo2,
-      skill3: skilllubo3,
-      skill4: skilllubo4,
-    },
-    bgLarge: lubo,
-  },
-
   {
     iconactive: iconquanvuactive,
     iconnormal: iconquanvunormal,
@@ -430,5 +307,133 @@ export const homePerson = [
       skill4: skillgiacacluong4,
     },
     bgLarge: giacacluong,
+  },
+  {
+    iconactive: icondaikieuactive,
+    iconnormal: icondaikieunormal,
+    name: namedaikieu,
+    nickName: "daikieu",
+    contry: "ngo",
+    description: `Đại Kiều là vợ của Tôn Sách, một trong những mỹ nhân thời kỳ Tam Quốc. Cùng em gái Tiểu Kiều được thiên hạ ca tụng là Giang Đông Nhị Kiều.`,
+    video: "sQ7ALTdSC",
+    skill: {
+      skill1: skilldaikieu1,
+      skill2: skilldaikieu2,
+      skill3: skilldaikieu3,
+      skill4: skilldaikieu4,
+    },
+    bgLarge: daikieu,
+  },
+  {
+    iconactive: iconchuduactive,
+    iconnormal: iconchudunormal,
+    name: namechudu,
+    nickName: "chudu",
+    contry: "ngo",
+    description: `Chu Du, tên tự Công Cẩn, đương thời gọi Chu Lang, là danh tướng và khai quốc công thần của nước Đông Ngô. Chu Du nổi tiếng với chiến thắng ở Trận Xích Bích trước quân Tào Tháo.`,
+    video: "sQ7ALTdSC",
+    skill: {
+      skill1: skillchudu1,
+      skill2: skillchudu2,
+      skill3: skillchudu3,
+      skill4: skillchudu4,
+    },
+    bgLarge: chudu,
+  },
+  {
+    iconactive: icontonsachactive,
+    iconnormal: icontonsachnormal,
+    name: nametonsach,
+    nickName: "tonsach",
+    contry: "ngo",
+    description: `Tôn Sách, tự Bá Phù, là một viên tướng và một lãnh chúa trong thời kỳ cuối của Đông Hán. Ông là người đặt nền móng quan trọng trong việc hình thành nên Đông Ngô, đã được người em trai Tôn Quyền kế thừa và hoàn thiện sau khi ông mất.`,
+    video: "sQ7ALTSC",
+    skill: {
+      skill1: skilltonsach1,
+      skill2: skilltonsach2,
+      skill3: skilltonsach3,
+      skill4: skilltonsach4,
+    },
+    bgLarge: tonsach,
+  },
+  {
+    iconactive: iconcamninhactive,
+    iconnormal: iconcamninhnormal,
+    name: namecamninh,
+    nickName: "camninh",
+    contry: "ngo",
+    description: `Cam Ninh, tự là Hưng Bá, mãnh tướng Giang Đông, theo Chu Du lập công lớn trong trận Xích Bích, đánh bại quân của Tào Tháo, nhân đó hạ được thành Di Lăng. Tôn Quyền từng ca tụng Tào Tháo có Trương Liêu, ta có Hưng Bá`,
+    video: "sQ7ALTSC",
+    skill: {
+      skill1: skillcamninh1,
+      skill2: skillcamninh2,
+      skill3: skillcamninh3,
+      skill4: skillcamninh4,
+    },
+    bgLarge: camninh,
+  },
+  {
+    iconactive: icontrancungactive,
+    iconnormal: icontrancungnormal,
+    name: nametrancung,
+    nickName: "trancung",
+    contry: "quan",
+    description: `Trần Cung, tên tự là Công Đài, từng theo Tào Tháo, sau làm mưu sĩ cho Lữ Bố đầu thời Tam Quốc. Lữ Bố chiến bại, Trần Cung không chịu hàng Tào nên Tào Tháo đành gạt nước mắt mà xử tử.`,
+    video: "sQ7ALTSC",
+    skill: {
+      skill1: skilltrancung1,
+      skill2: skilltrancung2,
+      skill3: skilltrancung3,
+      skill4: skilltrancung4,
+    },
+    bgLarge: trancung,
+  },
+  {
+    iconactive: iconhoadaactive,
+    iconnormal: iconhoadanormal,
+    name: namehoada,
+    nickName: "hoada",
+    contry: "quan",
+    description: `Hoa Đà, tự Nguyên Hóa, tinh thông y thuật, là một thầy thuốc nổi tiếng thời cuối Đông Hán và đầu thời Tam Quốc. Ông được xưng tụng như một Thần y nổi tiếng.`,
+    video: "sQ7ALTSC",
+    skill: {
+      skill1: skillhoada1,
+      skill2: skillhoada2,
+      skill3: skillhoada3,
+      skill4: skillhoada4,
+    },
+    bgLarge: hoada,
+  },
+  {
+    iconactive: icondieuthuyenactive,
+    iconnormal: icondieuthuyennormal,
+    name: namedieuthuyen,
+    nickName: "dieuthuyen",
+    contry: "quan",
+    description: `Điêu Thuyền, một trong tứ đại mỹ nhân, nghĩa nữ của Vương Doãn, để đền ơn nghĩa phụ đã tình nguyện hiến thân hoàn thành liên hoàn kế diệt Đổng Trác.`,
+    video: "sQ7ALTSC",
+    skill: {
+      skill1: skilldieuthuyen1,
+      skill2: skilldieuthuyen2,
+      skill3: skilldieuthuyen3,
+      skill4: skilldieuthuyen4,
+    },
+    bgLarge: dieuthuyen,
+  },
+  {
+    iconactive: iconluboactive,
+    iconnormal: iconlubonormal,
+    name: namelubo,
+    nickName: "lubo",
+    contry: "quan",
+    description: `Lữ Bố tự là Phụng Tiên, mãnh tướng số một tam quốc, cưỡi Xích Thổ, tay cầm Phương Thiên Kích, được ca tụng là chiến thần.`,
+    video: "sQ7ALTSC",
+    skill: {
+      skill1: skilllubo1,
+      skill2: skilllubo2,
+      skill3: skilllubo3,
+      skill4: skilllubo4,
+    },
+    bgLarge: lubo,
   },
 ];
