@@ -55,14 +55,16 @@ const Person = (props) => {
                             isContry === dataperson?.contry
                               ? "swiper__slide__show"
                               : "swiper__slide__hidden"
+                          } ${
+                            isPerson === dataperson?.nickName ? "active" : ""
                           }`}
                           onClick={() => setIsPerson(dataperson?.nickName)}
                         >
                           <img
                             src={
-                              `${isPerson === dataperson?.nickName
+                              isPerson === dataperson?.nickName
                                 ? dataperson?.iconactive
-                                : dataperson?.iconnormal}`
+                                : dataperson?.iconnormal
                             }
                             alt={`avatar-${index}`}
                           />
