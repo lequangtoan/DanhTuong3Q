@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 
 import HomeSection from "../HomeSection";
 
-import { btnNew } from "../../../assets/images/Button/home_new/home-new";
+import { btnNew, xemthemnormal } from "../../../assets/images/Button/home_new/home-new";
 
 import { BgFrame2 } from "../../../assets/videos";
-import { buttonxemthem, stick, test } from "../../../assets/images";
+import { stick, test } from "../../../assets/images";
 
 const News = (props) => {
   const [isTabs, setIsTabs] = useState("tatca");
@@ -125,7 +125,7 @@ const News = (props) => {
               </ul>
               <div className="site__news__center__content__list__more-link">
                 <img
-                  src={buttonxemthem}
+                  src={xemthemnormal}
                   alt=""
                 />
               </div>

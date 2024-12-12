@@ -46,7 +46,7 @@ const Feature = (props) => {
         setSize({ width: clientWidth, height: clientHeight });
       }
     }, 2000);
-    
+
     const runResizeHandler = () => {
       requestAnimationFrame(resizeHandler);
     };
@@ -68,7 +68,10 @@ const Feature = (props) => {
         <div className="site__feature__title"></div>
       </div>
 
-      <div className="accordion__wrapper" ref={containerRef}>
+      <div
+        className="accordion__wrapper"
+        ref={containerRef}
+      >
         <ul className="accordion__content">
           {data?.map((item, index) => (
             <li
@@ -76,11 +79,17 @@ const Feature = (props) => {
               onClick={() => handleNext(index)}
             >
               <img
-                src={hoverKey ? hoverKey : item?.tag}
+                src={
+                  activeKey === index
+                    ? item?.tagActive
+                    : hoverKey === item?.tagActive
+                    ? hoverKey
+                    : item?.tag
+                }
                 className="accordion__content__tag"
                 alt={`tag-${index}`}
-                // onMouseEnter={() => setHoverKey(item?.tagActive)}
-                // onMouseLeave={() => setHoverKey(null)}
+                onMouseEnter={() => setHoverKey(item?.tagActive)}
+                onMouseLeave={() => setHoverKey(null)}
               />
               <img
                 src={item?.feature}

@@ -1,0 +1,121 @@
+@use "../../../scss/" as *;
+
+.comic {
+  .planning {
+    background-image: url(../../../assets/images/Char.png);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 55%;
+
+    &__title {
+      width: 100%;
+      height: 14vh;
+      margin-top: 3rem;
+      background: url(../../../assets/images/Plot.png) no-repeat;
+      background-position: 50%;
+      background-size: contain;
+    }
+
+    &__content {
+      @include flex(flex-start, center);
+      flex-direction: column;
+      position: absolute;
+      width: 40rem;
+      left: 17rem;
+      margin-top: 0.5rem;
+
+      &__tabs {
+        @include flex(center, space-between);
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+
+        &__item {
+          width: 25%;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      &__kv {
+        width: 100%;
+        height: 15rem;
+        margin: 1rem 0 0.5rem;
+        overflow: hidden;
+        border: 2px #99422f solid;
+        box-shadow: 5px 5px #caa19d;
+
+        &__bg {
+          width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
+      }
+
+      &__title {
+        width: 80%;
+        height: auto;
+        margin-bottom: 0.5rem;
+      }
+
+      &__list {
+        @include flex(center, space-between);
+        flex-wrap: wrap;
+        width: 100%;
+
+        &__chapter {
+          position: relative;
+          width: 12.5rem;
+          min-height: 7rem;
+          overflow: hidden;
+          margin-right: 0.5rem;
+          margin-bottom: 1rem;
+          border: 2px #99422f solid;
+          box-shadow: 5px 5px #caa19d;
+          cursor: pointer;
+
+          &:nth-of-type(3n) {
+            margin-right: 0;
+          }
+
+          &__bg {
+            width: 100%;
+            height: auto;
+          }
+
+          &__title {
+            $wrapper-title: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: $wrapper-title;
+            line-height: calc($wrapper-title + 0.5rem);
+            white-space: nowrap;
+            text-indent: 0.5em;
+            text-overflow: ellipsis;
+            background: linear-gradient(0.25turn, #99422f, #99422f20);
+          }
+        }
+
+        &__chapter:hover:before {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(../../../assets/images/Cot_Truyen_Hover.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

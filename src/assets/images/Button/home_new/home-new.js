@@ -9,6 +9,8 @@ import tintucnormal from "./TinTucNormal.png";
 import xemthemactive from "./ButtonXemThemActive.png";
 import xemthemnormal from "./ButtonXemThemNormal.png";
 
+export { xemthemactive, xemthemnormal };
+
 export const btnNew = [
   {
     namebtn: "tatca",

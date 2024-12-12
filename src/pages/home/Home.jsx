@@ -7,7 +7,7 @@ import { EffectFade, Mousewheel, Pagination } from "swiper/modules";
 import {
   Welcome,
   News,
-  Plot,
+  Comic,
   Feature,
   Person,
 } from "./../../components/home-section";
@@ -52,7 +52,7 @@ const Home = () => {
           {({ isActive }) => <Person isActive={isActive} />}
         </SwiperSlide>
         <SwiperSlide>
-          {({ isActive }) => <Plot isActive={isActive} />}
+          {({ isActive }) => <Comic isActive={isActive} />}
         </SwiperSlide>
         <SwiperSlide>
           {({ isActive }) => <Feature isActive={isActive} />}
