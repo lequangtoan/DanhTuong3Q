@@ -60,9 +60,9 @@ const Person = (props) => {
                         >
                           <img
                             src={
-                              isPerson === dataperson?.nickName
+                              `${isPerson === dataperson?.nickName
                                 ? dataperson?.iconactive
-                                : dataperson?.iconnormal
+                                : dataperson?.iconnormal}`
                             }
                             alt={`avatar-${index}`}
                           />
