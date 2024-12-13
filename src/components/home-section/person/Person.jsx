@@ -20,7 +20,7 @@ const Person = (props) => {
       contentClassName="overlay person__content"
       bgImage={BgFrame3}
     >
-      <div className="site__person">
+      <div className="site__person container__main">
         <div className="site__person__title"></div>
         <div className="site__person__title__bg"></div>
 

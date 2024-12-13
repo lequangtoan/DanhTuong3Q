@@ -1,5 +1,11 @@
 @use "../../scss/" as *;
 
+@media only all and (max-width: 1024px) {
+  .drawer {
+    display: none;
+  }
+}
+
 .drawer {
   position: fixed;
   top: 50%;
@@ -7,7 +13,7 @@
   transform: translateY(-50%);
   width: auto;
   height: auto;
-  z-index: 100;
+  z-index: 10;
   pointer-events: none;
   background-image: url(../../assets/images/BG_Frame.png);
   background-repeat: no-repeat;

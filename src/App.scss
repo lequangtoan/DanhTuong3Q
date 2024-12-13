@@ -19,6 +19,7 @@ body {
   font-size: 100%;
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -91,6 +92,12 @@ iframe {
 
 .container {
   max-width: 1670px;
+  margin: auto;
+}
+
+.container__main {
+  width: 1670px;
+  // height: 100vh;
   margin: auto;
 }
 

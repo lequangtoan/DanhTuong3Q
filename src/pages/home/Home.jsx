@@ -2,7 +2,7 @@ import { scrolling } from "../../assets/images";
 
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Mousewheel, Pagination } from "swiper/modules";
+import { Pagination, Mousewheel, EffectFade } from "swiper/modules";
 
 import {
   Welcome,
@@ -14,14 +14,14 @@ import {
 import Drawer from "../../components/drawer/Drawer";
 
 const swiperOptions = {
-  modules: [EffectFade, Mousewheel, Pagination],
+  modules: [Pagination, Mousewheel, EffectFade],
   direction: "vertical",
   slidesPerView: 1,
   spaceBetween: 0,
   mousewheel: true,
   pagination: true,
-  // effect: "fade",
-  // speed: 5000,
+  effect: "fade",
+  speed: 750,
 };
 
 const Home = () => {
@@ -41,26 +41,29 @@ const Home = () => {
 
   return (
     <>
-      <Swiper {...swiperOptions}>
-        <SwiperSlide>
-          {({ isActive }) => <Welcome isActive={isActive} />}
-        </SwiperSlide>
-        <SwiperSlide>
-          {({ isActive }) => <News isActive={isActive} />}
-        </SwiperSlide>
-        <SwiperSlide>
-          {({ isActive }) => <Person isActive={isActive} />}
-        </SwiperSlide>
-        <SwiperSlide>
-          {({ isActive }) => <Comic isActive={isActive} />}
-        </SwiperSlide>
-        <SwiperSlide>
-          {({ isActive }) => <Feature isActive={isActive} />}
-        </SwiperSlide>
-      </Swiper>
+        <Swiper {...swiperOptions}>
+          <SwiperSlide>
+            {({ isActive }) => <Welcome isActive={isActive} />}
+          </SwiperSlide>
+          <SwiperSlide>
+            {({ isActive }) => <News isActive={isActive} />}
+          </SwiperSlide>
+          <SwiperSlide>
+            {({ isActive }) => <Person isActive={isActive} />}
+          </SwiperSlide>
+          <SwiperSlide>
+            {({ isActive }) => <Comic isActive={isActive} />}
+          </SwiperSlide>
+          <SwiperSlide>
+            {({ isActive }) => <Feature isActive={isActive} />}
+          </SwiperSlide>
+        </Swiper>
       <div className="scrolled">
         <span>
-          <img src={scrolling} alt="" />
+          <img
+            src={scrolling}
+            alt=""
+          />
         </span>
       </div>
       <Drawer isScrolled={isScrolled} />

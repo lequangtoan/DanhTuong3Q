@@ -18,8 +18,6 @@ import frameicon from "./images/Frame_Icon.png";
 
 import news from "./images/News.png";
 import stick from "./images/Stick.png";
-import buttonitemnormal from "./images/Button_Item_Normal.png";
-import buttonitemactice from "./images/Button_Item_Active.png";
 import buttonxemthem from "./images/Button_Xem_Them_Normal.png";
 
 import plot from "./images/Plot.png";
@@ -57,8 +55,6 @@ export {
   frameicon,
   news,
   stick,
-  buttonitemnormal,
-  buttonitemactice,
   buttonxemthem,
   plot,
   cottruyen,

@@ -9,10 +9,14 @@ $size: 1.5rem;
   &__title {
     width: 100%;
     height: 14vh;
-    margin-top: 4rem;
+    margin-top: 3rem;
     background: url(../../../assets/images/News.png) no-repeat;
     background-position: 50%;
     background-size: contain;
+
+    @include tablet {
+      width: 80%;
+    }
   }
 
   &__center {
@@ -25,6 +29,10 @@ $size: 1.5rem;
     &__tabs {
       @include flex(center, center);
       margin: 0 auto;
+      @include tablet {
+        @include flex(center, space-between);
+        width: 85%;
+      }
 
       &__item {
         width: 20%;
@@ -43,6 +51,13 @@ $size: 1.5rem;
       width: 100rem;
       height: auto;
 
+      @include tablet {
+        width: 100%;
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 4rem;
+      }
+
       &__swiper {
         width: 45rem;
         height: 25rem;
@@ -50,9 +65,19 @@ $size: 1.5rem;
         box-shadow: 10px 10px #caa19d;
         overflow: hidden;
 
+        @include tablet {
+          width: 85%;
+          height: auto;
+        }
+
         img {
           width: 45rem;
           height: 25rem;
+
+          @include tablet {
+            width: 55rem;
+            height: auto;
+          }
         }
       }
 
@@ -61,10 +86,14 @@ $size: 1.5rem;
         flex-direction: column;
         width: 45%;
         height: 25rem;
+        @include tablet {
+          width: 85%;
+          height: 30rem;
+        }
 
         &__title {
           width: 100%;
-          height: auto;
+          height: 100%;
 
           .site__news__slide__in {
             @include flex(flex-start, center);
@@ -79,6 +108,12 @@ $size: 1.5rem;
             border-bottom: 1px solid #555555;
             cursor: pointer;
 
+            @include tablet {
+              @include flex(center, space-between);
+              font-size: 2.5rem;
+              line-height: 5rem;
+            }
+
             &__content {
               display: flex;
               align-items: center;
@@ -87,6 +122,10 @@ $size: 1.5rem;
               &__dot {
                 width: 2rem;
                 margin-right: 10px;
+
+                @include tablet {
+                  margin-right: 20px;
+                }
               }
 
               &__title {
@@ -102,6 +141,11 @@ $size: 1.5rem;
               text-align: center;
               overflow: hidden;
               color: #555555;
+
+              @include tablet {
+                width: 18rem;
+                text-align: end;
+              }
             }
           }
           li:hover,
@@ -109,12 +153,18 @@ $size: 1.5rem;
             color: #99422f;
             .site__news__slide__in__content {
               .site__news__slide__in__content__title {
-                transform: translateY(-.5rem);
+                transform: translateY(-0.5rem);
               }
             }
             .site__news__slide__in__time {
               color: #99422f;
             }
+          }
+        }
+
+        &__more-link {
+          @include tablet {
+            margin: 4rem auto 0;
           }
         }
       }

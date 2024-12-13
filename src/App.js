@@ -4,7 +4,7 @@ import "swiper/css/effect-fade";
 
 import "./App.scss";
 
-// import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Home/>
       {/* <Routes>
-        <Route path="home" element={ <Home/> } />
+        <Route path="/" element={ <Home/> } />
       </Routes> */}
     </div>
   );

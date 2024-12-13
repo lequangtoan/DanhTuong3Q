@@ -5,8 +5,8 @@ import React, { useEffect, useRef, useState } from "react";
 
 import HomeSection from "../HomeSection";
 
-import { homeFeature } from "../../../assets/home-feature";
 import { BgFrame5 } from "../../../assets/videos";
+import { homeFeature } from './../../../assets/home-feature';
 
 const Feature = (props) => {
   const [data] = useState(homeFeature);
