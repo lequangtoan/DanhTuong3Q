@@ -2,18 +2,18 @@
 
 @media only all and (max-width: 1024px) {
   .drawer {
-    // display: none;
+    display: none;
   }
 }
 
 .drawer {
-  position: fixed;
+  position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
   width: auto;
   height: auto;
-  z-index: 10;
+  z-index: 1;
   pointer-events: none;
   background-image: url(../../assets/images/BG_Frame.png);
   background-repeat: no-repeat;

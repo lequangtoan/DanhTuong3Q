@@ -1,6 +1,5 @@
 @use "../../scss/" as *;
 
-// @media only all and (min-width: 1024px) {
 .header {
   height: $header-height;
   position: fixed;
@@ -12,6 +11,9 @@
   background-image: url(../../assets/images/BG_Menu.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  @include tablet{
+    
+  }
 
   &__inner {
     @include flex(center, center);
@@ -51,7 +53,6 @@
     }
   }
 }
-// }
 
 // @media only all and (max-width: 1024px) {
 //   .overlay {
