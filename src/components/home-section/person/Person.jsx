@@ -20,10 +20,11 @@ const Person = (props) => {
       contentClassName="overlay person__content"
       bgImage={BgFrame3}
     >
-      <div className="site__person container__main">
+      <div className="site__person">
         <div className="site__person__title"></div>
-        <div className="site__person__title__bg"></div>
 
+        {/* thong tin tuong */}
+        <div className="site__person__title__bg"></div>
         <div className="site__person__battle">
           <div className="site__person__battle__tab">
             {datacontry?.map((contry, index) => (
@@ -77,55 +78,57 @@ const Person = (props) => {
             ))}
           </div>
         </div>
+        <div className="site__person__item">
+          {datahomePerson?.map((cvperson, id) => (
+            <div
+              className={`${
+                isPerson === cvperson?.nickName
+                  ? "site__person__item__CV"
+                  : "site__person__item__CV__hidden"
+              }`}
+            >
+              <div className="site__person__item__CV__bg">
+                <img
+                  className="site__person__item__CV__bg__img"
+                  src={cvperson?.bgLarge}
+                  alt={`avatar-${id}`}
+                />
+              </div>
 
-        {/* thong tin tuong */}
-        {datahomePerson?.map((cvperson, id) => (
-          <div
-            className={`${
-              isPerson === cvperson?.nickName
-                ? "site__person__CV"
-                : "site__person__CV__hidden"
-            }`}
-          >
-            <img
-              className="site__person__CV__bg"
-              src={cvperson?.bgLarge}
-              alt={`avatar-${id}`}
-            />
-
-            <div className="site__person__CV__description">
-              <div className="site__person__CV__description__cv">
-                <img
-                  className="site__person__CV__description__cv__name"
-                  src={cvperson?.name}
-                  alt={`name-${id}`}
-                />
+              <div className="site__person__item__CV__description">
+                <div className="site__person__item__CV__description__cv">
+                  <img
+                    className="site__person__item__CV__description__cv__name"
+                    src={cvperson?.name}
+                    alt={`name-${id}`}
+                  />
+                </div>
+                <div className="site__person__item__CV__description__introduction">
+                  <p>{cvperson?.description}</p>
+                </div>
+                <div className="site__person__item__CV__description__skill">
+                  <img
+                    src={cvperson?.skill.skill1}
+                    alt={`skill-${cvperson?.skill.skill1}`}
+                  />
+                  <img
+                    src={cvperson?.skill.skill2}
+                    alt={`skill-${cvperson?.skill.skill2}`}
+                  />
+                  <img
+                    src={cvperson?.skill.skill3}
+                    alt={`skill-${cvperson?.skill.skill3}`}
+                  />
+                  <img
+                    src={cvperson?.skill.skill4}
+                    alt={`skill-${cvperson?.skill.skill4}`}
+                  />
+                </div>
+                <div className="site__person__item__CV__description__video"></div>
               </div>
-              <div className="site__person__CV__description__introduction">
-                <p>{cvperson?.description}</p>
-              </div>
-              <div className="site__person__CV__description__skill">
-                <img
-                  src={cvperson?.skill.skill1}
-                  alt={`skill-${cvperson?.skill.skill1}`}
-                />
-                <img
-                  src={cvperson?.skill.skill2}
-                  alt={`skill-${cvperson?.skill.skill2}`}
-                />
-                <img
-                  src={cvperson?.skill.skill3}
-                  alt={`skill-${cvperson?.skill.skill3}`}
-                />
-                <img
-                  src={cvperson?.skill.skill4}
-                  alt={`skill-${cvperson?.skill.skill4}`}
-                />
-              </div>
-              <div className="site__person__CV__description__video"></div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </HomeSection>
   );

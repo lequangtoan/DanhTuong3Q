@@ -1,8 +1,13 @@
 @use "../../../scss/" as *;
 
 .site__person {
-  @include flex(center, flex-start);
-  flex-direction: column;
+  @include tablet {
+    width: 100%;
+    height: 100%;
+    background: url(../../../assets/images/Backgroud/BG_Frame3.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+  }
 
   &__title {
     width: 100%;
@@ -11,6 +16,10 @@
     background: url(../../../assets/images/Danh_Tuong_Tam_Quoc.png) no-repeat;
     background-position: 50%;
     background-size: contain;
+    @include tablet {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   &__title__bg {
@@ -21,6 +30,9 @@
     background: url(../../../assets/images/Footage.png) no-repeat;
     background-position: 100% 100%;
     background-size: cover;
+    @include tablet {
+      top: 25%;
+    }
   }
 
   &__battle {
@@ -29,10 +41,19 @@
     z-index: 5;
     top: 14.25rem;
     left: 18rem;
+    @include tablet {
+      width: 55%;
+      height: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     &__tab {
       @include flex(flex-start, space-between);
       width: 25%;
+      @include tablet {
+        width: auto;
+      }
 
       .site__person__battle__tab__wrapper__item {
       }
@@ -86,79 +107,110 @@
 
       .site__person__active {
         display: block;
+        @include tablet {
+          display: none;
+        }
       }
     }
   }
 
-  &__CV {
-    &__bg {
-      position: relative;
-      z-index: 2;
-      width: auto;
-      height: 52rem;
-      margin-top: -1.25rem;
-      background-repeat: no-repeat;
-      background-position: 100% 50%;
-      background-size: contain;
+  &__item {
+    @include flex(center, flex-start);
+    flex-direction: column;
+
+    &__CV {
+      @include tablet {
+        width: 100%;
+        height: auto;
+        @include flex(center, space-between);
+        flex-direction: row-reverse;
+        margin-top: 25%;
+      }
+
+      &__bg {
+        position: relative;
+        z-index: 2;
+        width: auto;
+        height: 52rem;
+        margin-top: -1.25rem;
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-size: contain;
+        @include tablet {
+          width: 55%;
+          height: auto;
+        }
+      }
+
+      &__bg_hidden {
+        display: none;
+      }
+
+      &__description {
+        width: 30rem;
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        top: 11.5rem;
+        right: 16rem;
+        @include tablet {
+          position: sticky;
+          align-items: center;
+          width: 50%;
+          right: 0;
+          left: 2rem;
+        }
+
+        &__cv {
+          text-align: center;
+
+          &__name {
+            width: auto;
+            height: 10rem;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        &__introduction {
+          margin-top: 3.75rem;
+          font-family: $montserrat;
+          font-size: 1rem;
+          color: #7f181e;
+          font-weight: 600;
+          @include tablet {
+            width: 80%;
+            text-align: center;
+          }
+        }
+
+        &__skill {
+          @include flex(center, center);
+          gap: 1.25rem;
+          margin-top: 1rem;
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+        &__video {
+          content: "";
+          background-color: #00000080;
+          width: 400px;
+          height: 220px;
+          margin: 1rem auto;
+          border: 2px #fff solid;
+          box-shadow: -4px 0px #7f181e, 0px -4px #7f181e, 4px 0px #7f181e,
+            0px 4px #7f181e;
+        }
+      }
     }
 
-    &__bg_hidden {
+    &__CV__hidden {
       display: none;
     }
-
-    &__description {
-      width: 30rem;
-      position: absolute;
-      z-index: 5;
-      display: flex;
-      flex-direction: column;
-      top: 11.5rem;
-      right: 16rem;
-
-      &__cv {
-        text-align: center;
-
-        &__name {
-          width: auto;
-          height: 10rem;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-
-      &__introduction {
-        margin-top: 3.75rem;
-        font-family: $montserrat;
-        font-size: 1rem;
-        color: #7f181e;
-        font-weight: 600;
-      }
-
-      &__skill {
-        @include flex(center, center);
-        gap: 1.25rem;
-        margin-top: 1rem;
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-
-      &__video {
-        content: "";
-        background-color: #00000080;
-        width: 400px;
-        height: 220px;
-        margin: 1rem auto;
-        border: 2px #fff solid;
-        box-shadow: -4px 0px #7f181e, 0px -4px #7f181e, 4px 0px #7f181e,
-          0px 4px #7f181e;
-      }
-    }
-  }
-
-  &__CV__hidden {
-    display: none;
   }
 }

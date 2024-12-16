@@ -118,6 +118,9 @@ iframe {
   right: unset;
   left: 10px;
   margin: 0;
+  @include tablet{
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet {
