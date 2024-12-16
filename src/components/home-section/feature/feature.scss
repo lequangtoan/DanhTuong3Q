@@ -27,7 +27,7 @@
       @include tablet {
         width: 80%;
         height: 5rem;
-        margin: 3rem auto 0;
+        margin: 4rem auto 0;
       }
     }
   }
@@ -78,6 +78,8 @@
       margin: auto;
       @include tablet {
         display: block;
+        width: 80%;
+        height: auto;
       }
       li {
         display: flex;
