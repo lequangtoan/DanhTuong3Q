@@ -19,7 +19,7 @@
     @include tablet {
       width: 80%;
       height: 5rem;
-      margin: 3rem auto 0;
+      margin: 4rem auto 0;
     }
   }
 
@@ -32,7 +32,11 @@
     background-position: 100% 100%;
     background-size: cover;
     @include tablet {
-      top: 25%;
+      top: 13rem;
+    }
+    @include mobile {
+      top: 15%;
+      height: 2rem;
     }
   }
 
@@ -45,6 +49,7 @@
     @include tablet {
       width: 55%;
       height: auto;
+      top: 5rem;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -53,10 +58,8 @@
       @include flex(flex-start, space-between);
       width: 25%;
       @include tablet {
-        width: auto;
-      }
-
-      .site__person__battle__tab__wrapper__item {
+        width: 100%;
+        gap: 1rem;
       }
 
       .site__person__battle__tab__swiper {
@@ -127,6 +130,9 @@
         flex-direction: row-reverse;
         margin-top: 25%;
       }
+      @include mobile {
+        align-items: flex-start;
+      }
 
       &__bg {
         position: relative;
@@ -162,6 +168,11 @@
           right: 0;
           left: 2rem;
         }
+        @include mobile {
+          width: 50%;
+          right: 0;
+          left: 1rem;
+        }
 
         &__cv {
           text-align: center;
@@ -171,6 +182,10 @@
             height: 10rem;
             margin-left: auto;
             margin-right: auto;
+            @include mobile {
+              width: 100%;
+              height: auto;
+            }
           }
         }
 
@@ -184,16 +199,28 @@
             width: 80%;
             text-align: center;
           }
+          @include mobile {
+            margin: 1rem 0 0 0;
+            width: 95%;
+            font-size: 0.75rem;
+          }
         }
 
         &__skill {
           @include flex(center, center);
           gap: 1.25rem;
           margin-top: 1rem;
+          @include mobile {
+            gap: .25rem;
+          }
 
           img {
             width: 80px;
             height: 80px;
+            @include mobile {
+              width: 50px;
+              height: 50px;
+            }
           }
         }
 
@@ -206,6 +233,10 @@
           border: 2px #fff solid;
           box-shadow: -4px 0px #7f181e, 0px -4px #7f181e, 4px 0px #7f181e,
             0px 4px #7f181e;
+          @include mobile {
+            width: 400px;
+            height: 220px;
+          }
         }
       }
     }
