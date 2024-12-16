@@ -53,65 +53,59 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    @include mobile{
+    @include mobile {
       width: 85%;
     }
 
     &__tab {
       @include flex(flex-start, space-between);
       width: 25%;
+
       @include tablet {
         width: 100%;
         gap: 1rem;
       }
-      .site__person__battle__tab__wrapper {
+      .site__person__battle__tab__swiper {
+        display: none;
+        .site__person__battle__swiper__wrapper {
+          @include flex(center, center);
+          flex-direction: column;
+          width: auto;
+          height: 28.5rem;
+          overflow: hidden;
+          margin-top: -2.9rem;
+          padding-top: 2.5rem;
+          background: url(../../../assets/images/Slide_Char.png) no-repeat;
+          background-size: 100% 100%;
 
+          .site__person__battle__swiper__item {
+            margin: 15px auto 0;
 
+            .swiper__slide__show {
+              display: block;
+              position: relative;
+              width: auto;
+              height: 85px;
+              margin: 5px 0;
+            }
 
-        .site__person__battle__tab__swiper {
-          display: none;
+            .active:before {
+              content: "";
+              position: absolute;
+              width: 85px;
+              height: 85px;
+              z-index: 10;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background: url(../../../assets/images/Avatar_Char.png) no-repeat;
+              background-size: 100% 100%;
+              margin: auto;
+            }
 
-          .site__person__battle__swiper__wrapper {
-            @include flex(center, center);
-            flex-direction: column;
-            width: auto;
-            height: 28.5rem;
-            overflow: hidden;
-            margin-top: -2.9rem;
-            padding-top: 2.5rem;
-            background: url(../../../assets/images/Slide_Char.png) no-repeat;
-            background-size: 100% 100%;
-
-            .site__person__battle__swiper__item {
-              margin: 15px auto 0;
-
-              .swiper__slide__show {
-                display: block;
-                position: relative;
-                width: auto;
-                height: 85px;
-                margin: 5px 0;
-              }
-
-              .active:before {
-                content: "";
-                position: absolute;
-                width: 85px;
-                height: 85px;
-                z-index: 10;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background: url(../../../assets/images/Avatar_Char.png)
-                  no-repeat;
-                background-size: 100% 100%;
-                margin: auto;
-              }
-
-              .swiper__slide__hidden {
-                display: none;
-              }
+            .swiper__slide__hidden {
+              display: none;
             }
           }
         }
