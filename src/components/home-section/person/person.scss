@@ -18,7 +18,8 @@
     background-size: contain;
     @include tablet {
       width: 80%;
-      margin: 0 auto;
+      height: 5rem;
+      margin: 3rem auto 0;
     }
   }
 
