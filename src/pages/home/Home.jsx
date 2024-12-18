@@ -15,13 +15,12 @@ import Drawer from "../../components/drawer/Drawer";
 
 const swiperOptions = {
   modules: [Pagination, Mousewheel, EffectFade],
-  direction: "vertical",
-  slidesPerView: 1,
-  spaceBetween: 0,
   mousewheel: true,
   pagination: true,
-  effect: "fade",
-  speed: 750,
+  paginationClickable: true,
+  parallax: true,
+  speed: 600,
+  direction: "vertical",
 };
 
 const Home = () => {
@@ -41,6 +40,7 @@ const Home = () => {
 
   return (
     <>
+      {/* <div className="pc"> */}
         <Swiper {...swiperOptions}>
           <SwiperSlide>
             {({ isActive }) => <Welcome isActive={isActive} />}
@@ -58,6 +58,7 @@ const Home = () => {
             {({ isActive }) => <Feature isActive={isActive} />}
           </SwiperSlide>
         </Swiper>
+      {/* </div> */}
       <div className="scrolled">
         <span>
           <img
@@ -66,7 +67,14 @@ const Home = () => {
           />
         </span>
       </div>
-      <Drawer isScrolled={isScrolled} />
+      {/* <Drawer isScrolled={isScrolled} /> */}
+      {/* <div className="mobile">
+        <Welcome />
+        <News />
+        <Person />
+        <Comic />
+        <Feature />
+      </div> */}
     </>
   );
 };
