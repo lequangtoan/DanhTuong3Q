@@ -19,7 +19,11 @@
     @include tablet {
       width: 80%;
       height: 5rem;
-      margin: 4rem auto 0;
+      margin: 12rem auto 0;
+    }
+    @include mobile {
+      width: 90%;
+      margin: 5rem auto 0;
     }
   }
 

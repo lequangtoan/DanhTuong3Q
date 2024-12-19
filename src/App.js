@@ -3,21 +3,15 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
 import "./App.scss";
-
-import { Routes, Route } from "react-router-dom"
-
-import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <Home/>
-      {/* <Routes>
-        <Route path="/" element={ <Home/> } />
-      </Routes> */}
     </div>
   );
 }

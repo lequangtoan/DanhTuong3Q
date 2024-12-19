@@ -118,7 +118,7 @@ iframe {
   right: unset;
   left: 10px;
   margin: 0;
-  @include tablet{
+  @include tablet {
     display: none;
   }
 }
@@ -155,20 +155,6 @@ iframe {
   }
 }
 
-// .pc{
-//   display: block;
-//   @include tablet{
-//     display: none;
-//   }
-// }
-
-// .mobile{
-//   display: none;
-//   @include tablet{
-//     display: block;
-//   }
-// }
-
 .scrolled {
   position: fixed;
   bottom: 1rem;
@@ -176,9 +162,9 @@ iframe {
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 3s ease infinite;
-@include mobile{
-  display: none;
-}
+  @include mobile {
+    display: none;
+  }
 }
 
 @keyframes bounce {

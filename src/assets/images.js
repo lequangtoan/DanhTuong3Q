@@ -1,5 +1,6 @@
 // menu
 import bgmenu from "./images/BG_Menu.png";
+import MenuOption from "./images/Button/MenuOption.png";
 import scrolling from "./images/Scrolling.png";
 import congdong from "./images/CongDong.png";
 import facebook from "./images/Facebook.png";
@@ -30,7 +31,6 @@ import tinhnangdacsac from "./images/Tinh_Nang_Dac_Sac.png";
 import danhtuongtamquoc from "./images/Danh_Tuong_Tam_Quoc.png";
 import footage from "./images/Footage.png";
 
-
 import test from "./images/text.jpg";
 import test1 from "./images/test1.png";
 import test2 from "./images/test2.png";
@@ -40,6 +40,7 @@ export {
   test1,
   test2,
   bgmenu,
+  MenuOption,
   scrolling,
   congdong,
   facebook,

@@ -20,11 +20,14 @@ $size: 1.5rem;
     background: url(../../../assets/images/News.png) no-repeat;
     background-position: 50%;
     background-size: contain;
-
     @include tablet {
       width: 80%;
       height: 5rem;
-      margin: 3rem auto 0;
+      margin: 12rem auto 0;
+    }
+    @include mobile {
+      width: 90%;
+      margin: 5rem auto 0;
     }
   }
 

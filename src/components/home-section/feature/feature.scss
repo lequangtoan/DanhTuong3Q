@@ -9,9 +9,9 @@
     background-size: cover;
   }
 
-  video {
-    bottom: 0;
-  }
+  // video {
+  //   bottom: 0;
+  // }
 
   .site__feature {
     @include flex(center, flex-start);
@@ -27,7 +27,11 @@
       @include tablet {
         width: 80%;
         height: 5rem;
-        margin: 4rem auto 0;
+        margin: 12rem auto 0;
+      }
+      @include mobile{
+        width: 90%;
+        margin: 5rem auto 0;
       }
     }
   }
@@ -38,7 +42,7 @@
     margin: 0 auto;
     overflow: hidden;
     @include tablet {
-      width: 100%;
+      width: 90%;
     }
 
     .accordion__content {
@@ -78,8 +82,11 @@
       margin: auto;
       @include tablet {
         display: block;
-        width: 80%;
+        width: 50%;
         height: auto;
+      }
+      @include mobile{
+        width: 70%;
       }
       li {
         display: flex;
