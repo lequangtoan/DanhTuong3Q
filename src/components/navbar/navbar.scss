@@ -2,16 +2,17 @@
 
 .navbar {
   @include flex(center, center);
-  height: $header-height;
+  height: calc($header-height + 2px);
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
-  pointer-events: none;
+  // pointer-events: none;
   background-image: url(../../assets/images/BG_Menu.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border-bottom: 2px #eece86 solid;
   @include tablet {
     pointer-events: all;
     justify-content: space-between;
@@ -26,28 +27,38 @@
     display: none;
     @include tablet {
       display: block;
-      margin: 4rem 0 0 2rem;
+      margin: 0 0 0 2rem;
+      width: 5.5rem;
       position: absolute;
     }
     @include mobile {
-      height: 4.5rem;
-      margin: 1.5rem 0 0 0.75rem;
+      width: 3rem;
+      margin: 0 0 0 0.75rem;
     }
   }
 
   &__title {
     display: none;
-    font-size: 2rem;
-    color: $txt-color-white;
     @include tablet {
-      display: block;
-      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      margin: 0 0 0 12rem;
+      right: 0;
+      left: 0;
     }
-    @include mobile {
-      font-size: 1.25rem;
-      margin: 0 0 0 6rem;
+
+    .slide-btn {
+      img {
+        @include tablet {
+          height: 5rem;
+          margin-left: 2.5rem;
+        }
+        @include mobile {
+          height: 2.25rem;
+          margin-left: 0.5rem;
+        }
+      }
     }
   }
 
@@ -90,7 +101,7 @@
       }
 
       li ~ li {
-        margin-left: 2rem;
+        margin-left: 0.5rem;
         @include tablet {
           margin-left: 0rem;
         }
@@ -104,8 +115,8 @@
         text-transform: uppercase;
         position: relative;
         pointer-events: visible;
-        font-weight: 600;
-        font-size: 1rem;
+        font-weight: 400;
+        font-size: 1.5rem;
         text-align: center;
         @include tablet {
           width: 100%;
@@ -161,17 +172,48 @@
     @include tablet {
       display: block;
       position: absolute;
-      margin: 0 5rem 0 0;
+      margin: 0 2rem 0 0;
       right: 0;
       z-index: 100;
     }
     @include mobile {
-      margin: 0 1.5rem 0 0;
+      margin: 0 0.5rem 0 0;
     }
     img {
       @include mobile {
-        width: 3rem;
-        height: 2.25rem;
+        width: 2.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  &__ground {
+    display: none;
+    @include tablet {
+      position: fixed;
+      @include flex(center, space-around);
+      left: 0;
+      width: 100%;
+      height: calc($header-height + 0.5rem);
+      top: calc($header-height * 2);
+      pointer-events: all;
+      background-image: url(../../assets/images/BG_Menu_mobile.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    @include mobile {
+      height: calc($header-height / 1.5);
+      top: calc($header-height);
+    }
+
+    .slide-btn__ground {
+      img {
+        @include tablet {
+          height: 2.5rem;
+        }
+        @include mobile {
+          height: 1.5rem;
+        }
       }
     }
   }

@@ -1,7 +1,13 @@
 import "./navbar.scss";
 import React, { useState } from "react";
-// import { NavLink } from "react-router-dom";
 import { icongame, MenuOption } from "../../assets/images";
+import {
+  btnnapthe,
+  btntaigame,
+  discord,
+  fanpage,
+  group,
+} from "../../assets/images/Button/navbar/button";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,12 +20,19 @@ const Navbar = () => {
     <div className="navbar">
       <img className="navbar__logo" src={icongame} alt="Logo-img" />
       <div className="navbar__title">
-        <h2>Danh Tướng Origin</h2>
+        <a href="##" className="slide-btn">
+          <img src={btnnapthe} alt="napthe" />
+        </a>
+        <a href="##" className="slide-btn">
+          <img src={btntaigame} alt="taigame" />
+        </a>
       </div>
       <div className={`navbar__menu ${open ? "menu__active" : ""}`}>
         <ul className="navbar__menu__item">
           <li>
-            <a className="active" href="/">Trang chủ</a>
+            <a className="active" href="/">
+              Trang chủ
+            </a>
           </li>
           <li>
             <a href="/news">Tin tức</a>
@@ -40,6 +53,17 @@ const Navbar = () => {
       </div>
       <div className="cross__icons" onClick={handleClick}>
         <img src={MenuOption} alt="Menu-Option" />
+      </div>
+      <div className="navbar__ground">
+        <a href="##" className="slide-btn__ground">
+          <img src={fanpage} alt="napthe" />
+        </a>
+        <a href="##" className="slide-btn__ground">
+          <img src={group} alt="napthe" />
+        </a>
+        <a href="##" className="slide-btn__ground">
+          <img src={discord} alt="napthe" />
+        </a>
       </div>
     </div>
   );

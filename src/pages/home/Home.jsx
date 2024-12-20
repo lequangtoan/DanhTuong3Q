@@ -11,7 +11,6 @@ import {
   Feature,
   Person,
 } from "./../../components/home-section";
-import Drawer from "../../components/drawer/Drawer";
 
 const swiperOptions = {
   modules: [Pagination, Mousewheel, EffectFade],
@@ -24,19 +23,19 @@ const swiperOptions = {
 };
 
 const Home = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const welcomeElement = document.querySelector(".welcome");
-      const welcomeHeight = welcomeElement.offsetHeight;
-      setIsScrolled(window.scrollY > welcomeHeight);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const welcomeElement = document.querySelector(".welcome");
+  //     const welcomeHeight = welcomeElement.offsetHeight;
+  //     setIsScrolled(window.scrollY > welcomeHeight);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -62,7 +61,6 @@ const Home = () => {
           <img src={scrolling} alt="" />
         </span>
       </div>
-      {/* <Drawer isScrolled={isScrolled} /> */}
       {/* <div className="mobile">
         <Welcome />
         <News />
