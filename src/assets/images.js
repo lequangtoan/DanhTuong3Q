@@ -1,5 +1,6 @@
 // menu
 import bgmenu from "./images/BG_Menu.png";
+import bgWelcom from "./images/Welcom.png";
 import MenuOption from "./images/Button/MenuOption.png";
 import scrolling from "./images/Scrolling.png";
 import congdong from "./images/CongDong.png";
@@ -40,6 +41,7 @@ export {
   test1,
   test2,
   bgmenu,
+  bgWelcom,
   MenuOption,
   scrolling,
   congdong,

@@ -6,20 +6,27 @@
     width: auto;
     height: auto;
     background: url(../../../assets/images/Backgroud/BG_Frame1.png) no-repeat;
-    margin-top: calc($header-height *2);
+    margin-top: calc($header-height * 2);
     background-position: 0 0;
     background-size: cover;
   }
-  @include mobile{
+  @include mobile {
     margin-top: calc($header-height);
   }
 
   &__logo {
-    position: absolute;
-    right: 20rem;
-    padding-top: 4rem;
+    display: none;
     @include tablet {
-      display: none;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 15%;
+    }
+    img {
+      @include tablet {
+        width: 80%;
+        margin: 0 auto;
+      }
     }
   }
 
