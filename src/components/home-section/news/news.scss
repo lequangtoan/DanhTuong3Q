@@ -199,6 +199,11 @@ $size: 1.5rem;
           @include tablet {
             margin: 4rem auto 0;
           }
+          img {
+            @include mobile {
+              height: 2rem;
+            }
+          }
         }
       }
     }

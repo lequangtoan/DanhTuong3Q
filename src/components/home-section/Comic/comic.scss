@@ -7,6 +7,10 @@
     background: url(../../../assets/images/Backgroud/BG_Frame4.png) no-repeat;
     background-position: 100% 100%;
     background-size: cover;
+    padding-top: calc($header-height * 2);
+  }
+  @include mobile {
+    padding-top: $header-height;
   }
 
   .planning {
@@ -30,11 +34,11 @@
       @include tablet {
         width: 80%;
         height: 5rem;
-        margin: 12rem auto 0;
+        margin: 0 auto 0;
       }
-      @include mobile{
+      @include mobile {
         width: 90%;
-        margin: 5rem auto 0;
+        margin: 0 auto 0;
       }
     }
 
@@ -46,7 +50,7 @@
       left: 17rem;
       margin-top: 0.5rem;
       @include tablet {
-        width: 85%;
+        width: 80%;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -102,10 +106,11 @@
         height: auto;
         margin-bottom: 0.5rem;
         @include tablet {
-          width: 85%;
-          margin: 1.5rem 0 1rem;
+          width: 70%;
+          margin: 1rem 0 .5rem;
         }
         @include mobile {
+          width: 85%;
           margin: 0.75rem 0 0.25rem;
         }
       }
@@ -127,7 +132,7 @@
           cursor: pointer;
 
           @include tablet {
-            width: 25.5rem;
+            width: 16.5rem;
             margin: 1.5rem 0 1rem;
           }
           @include mobile {

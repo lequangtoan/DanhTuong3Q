@@ -40,7 +40,6 @@ const Home = () => {
 
   return (
     <>
-      {/* <div className="pc"> */}
       <Swiper {...swiperOptions}>
         <SwiperSlide>
           {({ isActive }) => <Welcome isActive={isActive} />}
@@ -58,7 +57,6 @@ const Home = () => {
           {({ isActive }) => <Feature isActive={isActive} />}
         </SwiperSlide>
       </Swiper>
-      {/* </div> */}
       <div className="scrolled">
         <span>
           <img src={scrolling} alt="" />
