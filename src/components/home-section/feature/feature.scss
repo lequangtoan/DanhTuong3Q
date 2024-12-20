@@ -25,9 +25,9 @@
         height: 5rem;
         margin: calc($header-height * 2) auto 0;
       }
-      @include mobile{
+      @include mobile {
         width: 90%;
-        margin: 5rem auto 0;
+        margin: $header-height auto 0;
       }
     }
   }
@@ -81,7 +81,7 @@
         width: 55%;
         height: auto;
       }
-      @include mobile{
+      @include mobile {
         width: 70%;
       }
       li {

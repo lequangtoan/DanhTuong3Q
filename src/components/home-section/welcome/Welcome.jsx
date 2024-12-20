@@ -21,10 +21,10 @@ const Welcome = (props) => {
       contentClassName="overlay welcome__content"
       bgImage={BgFrame1}
     >
-      <div className="welcome__logo">
+      <div className="welcome__logo hvrIconDown">
         <img src={bgWelcom} alt="" />
       </div>
-      <div className="welcome__info relative">
+      <div className="welcome__info relative site-slide-in-right">
         <div className="welcome__info__content">
           <div className="info__app">
             <a className="info__app__icon" href="##">

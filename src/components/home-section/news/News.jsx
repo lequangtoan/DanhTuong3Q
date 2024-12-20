@@ -22,7 +22,7 @@ const News = (props) => {
       <div className="site__news">
         <div className="site__news__title"></div>
         <div className="site__news__center">
-          <ul className="site__news__center__tabs">
+          <ul className="site__news__center__tabs site-slide-in-blurred-left">
             {btnNew?.map((btn, id) => (
               <li
                 className={`site__news__center__tabs__item ${
@@ -47,7 +47,7 @@ const News = (props) => {
             ))}
           </ul>
           <div className="site__news__center__content">
-            <div className="site__news__center__content__swiper">
+            <div className="site__news__center__content__swiper site-slide-in-right">
               <img
                 src={test}
                 alt={`image-${test}`}
@@ -55,7 +55,7 @@ const News = (props) => {
             </div>
             <div className="site__news__center__content__list">
               <ul className="site__news__center__content__list__title">
-                <li className="site__news__slide__in">
+                <li className="site__news__slide__in slide-in-right_0">
                   <p className="site__news__slide__in__content">
                     <div className="site__news__slide__in__content__dot">
                       <img
@@ -72,7 +72,7 @@ const News = (props) => {
                   </span>
                 </li>
 
-                <li className="site__news__slide__in">
+                <li className="site__news__slide__in slide-in-right_1">
                   <p className="site__news__slide__in__content">
                     <div className="site__news__slide__in__content__dot">
                       <img
@@ -89,7 +89,7 @@ const News = (props) => {
                   </span>
                 </li>
 
-                <li className="site__news__slide__in">
+                <li className="site__news__slide__in slide-in-right_2">
                   <p className="site__news__slide__in__content">
                     <div className="site__news__slide__in__content__dot">
                       <img
@@ -106,7 +106,7 @@ const News = (props) => {
                   </span>
                 </li>
 
-                <li className="site__news__slide__in">
+                <li className="site__news__slide__in slide-in-right_3">
                   <p className="site__news__slide__in__content">
                     <div className="site__news__slide__in__content__dot">
                       <img
@@ -123,7 +123,7 @@ const News = (props) => {
                   </span>
                 </li>
               </ul>
-              <div className="site__news__center__content__list__more-link">
+              <div className="site__news__center__content__list__more-link site-slide-in-bottom">
                 <img
                   src={xemthemnormal}
                   alt=""

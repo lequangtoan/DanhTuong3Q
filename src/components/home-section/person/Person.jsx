@@ -26,7 +26,7 @@ const Person = (props) => {
         {/* thong tin tuong */}
         <div className="site__person__title__bg"></div>
         <div className="site__person__battle">
-          <div className="site__person__battle__tab">
+          <div className="site__person__battle__tab site-slide-in-right">
             {datacontry?.map((contry, index) => (
               <div
                 className="site__person__battle__tab__wrapper"
@@ -87,7 +87,7 @@ const Person = (props) => {
                   : "site__person__item__CV__hidden"
               }`}
             >
-              <div className="site__person__item__CV__bg">
+              <div className="site__person__item__CV__bg  site-slide-in-right">
                 <img
                   className="site__person__item__CV__bg__img"
                   src={cvperson?.bgLarge}
@@ -95,18 +95,18 @@ const Person = (props) => {
                 />
               </div>
 
-              <div className="site__person__item__CV__description">
-                <div className="site__person__item__CV__description__cv">
+              <div className="site__person__item__CV__description ">
+                <div className="site__person__item__CV__description__cv slide-in-right_0">
                   <img
                     className="site__person__item__CV__description__cv__name"
                     src={cvperson?.name}
                     alt={`name-${id}`}
                   />
                 </div>
-                <div className="site__person__item__CV__description__introduction">
+                <div className="site__person__item__CV__description__introduction slide-in-right_1">
                   <p>{cvperson?.description}</p>
                 </div>
-                <div className="site__person__item__CV__description__skill">
+                <div className="site__person__item__CV__description__skill slide-in-right_2">
                   <img
                     src={cvperson?.skill.skill1}
                     alt={`skill-${cvperson?.skill.skill1}`}
@@ -124,7 +124,7 @@ const Person = (props) => {
                     alt={`skill-${cvperson?.skill.skill4}`}
                   />
                 </div>
-                <div className="site__person__item__CV__description__video"></div>
+                <div className="site__person__item__CV__description__video slide-in-right_3"></div>
               </div>
             </div>
           ))}

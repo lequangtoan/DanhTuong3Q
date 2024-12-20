@@ -68,15 +68,13 @@ const Feature = (props) => {
         <div className="site__feature__title"></div>
       </div>
 
-      <div
-        className="accordion__wrapper"
-        ref={containerRef}
-      >
+      <div className="accordion__wrapper" ref={containerRef}>
         <ul className="accordion__content">
           {data?.map((item, index) => (
             <li
               key={index}
               onClick={() => handleNext(index)}
+              className={`site-slide-in-bottom_${index}`}
             >
               <img
                 src={
@@ -108,6 +106,7 @@ const Feature = (props) => {
             <li
               key={index}
               onClick={() => handleNext(index)}
+              className={`site-slide-in-bottom_${index}`}
             >
               <img
                 src={

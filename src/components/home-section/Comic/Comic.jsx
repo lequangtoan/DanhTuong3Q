@@ -22,7 +22,7 @@ const Comic = (props) => {
       <div className="planning">
         <div className="planning__title"></div>
         <div className="planning__content">
-          <ul className="planning__content__tabs">
+          <ul className="planning__content__tabs site-slide-in-right">
             {btnComic?.map((btn, id) => (
               <li
                 className={`planning__content__tabs__item ${
@@ -49,7 +49,7 @@ const Comic = (props) => {
             ))}
           </ul>
           <a
-            className="planning__content__kv"
+            className="planning__content__kv site-slide-in-right"
             href="##"
           >
             <img
@@ -60,13 +60,13 @@ const Comic = (props) => {
           </a>
 
           <img
-            className="planning__content__title"
+            className="planning__content__title site-slide-in-right"
             src={cottruyen}
             alt="planning__content__title"
           />
 
           <ul className="planning__content__list">
-            <li className="planning__content__list__chapter">
+            <li className="planning__content__list__chapter site-slide-in-bottom_0">
               <img
                 className="planning__content__list__chapter__bg"
                 src={test2}
@@ -76,7 +76,7 @@ const Comic = (props) => {
                 001 tieu de
               </p>
             </li>
-            <li className="planning__content__list__chapter">
+            <li className="planning__content__list__chapter site-slide-in-bottom_1">
               <img
                 className="planning__content__list__chapter__bg"
                 src={test2}
@@ -86,7 +86,7 @@ const Comic = (props) => {
                 002 tieu de
               </p>
             </li>
-            <li className="planning__content__list__chapter">
+            <li className="planning__content__list__chapter site-slide-in-bottom_2">
               <img
                 className="planning__content__list__chapter__bg"
                 src={test2}
@@ -96,7 +96,7 @@ const Comic = (props) => {
                 003 tieu de
               </p>
             </li>
-            <li className="planning__content__list__chapter">
+            <li className="planning__content__list__chapter site-slide-in-bottom_3">
               <img
                 className="planning__content__list__chapter__bg"
                 src={test2}
@@ -106,7 +106,7 @@ const Comic = (props) => {
                 004 tieu de
               </p>
             </li>
-            <li className="planning__content__list__chapter">
+            <li className="planning__content__list__chapter site-slide-in-bottom_4">
               <img
                 className="planning__content__list__chapter__bg"
                 src={test2}
@@ -116,7 +116,7 @@ const Comic = (props) => {
                 005 tieu de
               </p>
             </li>
-            <li className="planning__content__list__chapter">
+            <li className="planning__content__list__chapter site-slide-in-bottom_5">
               <img
                 className="planning__content__list__chapter__bg"
                 src={test2}
