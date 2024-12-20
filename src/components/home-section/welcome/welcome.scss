@@ -6,6 +6,7 @@
     width: auto;
     height: auto;
     background: url(../../../assets/images/Backgroud/BG_Frame1.png) no-repeat;
+    margin-top: calc($header-height *2);
     background-position: 0 0;
     background-size: cover;
   }

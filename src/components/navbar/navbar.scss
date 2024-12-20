@@ -15,11 +15,11 @@
   @include tablet {
     pointer-events: all;
     justify-content: space-between;
-    height: calc($header-height * 2.5);
+    height: calc($header-height * 2);
     background-image: url(../../assets/images/BG_Menu_mobile.png);
   }
   @include mobile {
-    height: calc($header-height + 1rem);
+    height: calc($header-height);
   }
 
   &__logo {
@@ -30,7 +30,7 @@
       position: absolute;
     }
     @include mobile {
-      height: 4rem;
+      height: 4.5rem;
       margin: 1.5rem 0 0 0.75rem;
     }
   }
@@ -45,7 +45,7 @@
       margin: 0 0 0 12rem;
     }
     @include mobile {
-      font-size: 0.75rem;
+      font-size: 1.25rem;
       margin: 0 0 0 6rem;
     }
   }
@@ -56,14 +56,14 @@
       width: 100%;
       position: absolute;
       z-index: -1;
-      height: calc(100vh - ($header-height * 2.5));
-      top: calc(-100vh - ($header-height * 2.5));
+      height: calc(100vh - ($header-height * 2));
+      top: calc(-100vh - ($header-height * 2));
       overflow: auto;
       background-color: rgba(3, 18, 38, 0.8);
       transition: all 0.3s ease-in-out;
     }
     @include mobile {
-      height: calc(100vh - ($header-height + 1rem));
+      height: calc(100vh - ($header-height));
       top: calc(-100vh - ($header-height + 1rem));
     }
 
@@ -148,10 +148,10 @@
   }
   .menu__active {
     @include tablet {
-      top: calc($header-height * 2.5);
+      top: calc($header-height * 2);
     }
     @include mobile {
-      top: calc($header-height + 1rem);
+      top: calc($header-height);
     }
   }
 

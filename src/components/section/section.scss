@@ -8,9 +8,13 @@
 
   video {
     position: absolute;
-    width: 100%;
-    height: auto;
+    height: fit-content;
+    left: 50%;
+    transform: translate(-50%);
     @include tablet {
+      display: none;
+    }
+    @include mobile {
       display: none;
     }
   }

@@ -20,9 +20,7 @@ const Welcome = (props) => {
       contentClassName="overlay welcome__content"
       bgImage={BgFrame1}
     >
-      <div className="welcome__logo">
-        <img src={logo} alt="" />
-      </div>
+
       <div className="welcome__info relative">
         <div className="welcome__info__content">
           <div className="info__app">

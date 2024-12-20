@@ -41,30 +41,27 @@ const Home = () => {
   return (
     <>
       {/* <div className="pc"> */}
-        <Swiper {...swiperOptions}>
-          <SwiperSlide>
-            {({ isActive }) => <Welcome isActive={isActive} />}
-          </SwiperSlide>
-          <SwiperSlide>
-            {({ isActive }) => <News isActive={isActive} />}
-          </SwiperSlide>
-          <SwiperSlide>
-            {({ isActive }) => <Person isActive={isActive} />}
-          </SwiperSlide>
-          <SwiperSlide>
-            {({ isActive }) => <Comic isActive={isActive} />}
-          </SwiperSlide>
-          <SwiperSlide>
-            {({ isActive }) => <Feature isActive={isActive} />}
-          </SwiperSlide>
-        </Swiper>
+      <Swiper {...swiperOptions}>
+        <SwiperSlide>
+          {({ isActive }) => <Welcome isActive={isActive} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          {({ isActive }) => <News isActive={isActive} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          {({ isActive }) => <Person isActive={isActive} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          {({ isActive }) => <Comic isActive={isActive} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          {({ isActive }) => <Feature isActive={isActive} />}
+        </SwiperSlide>
+      </Swiper>
       {/* </div> */}
       <div className="scrolled">
         <span>
-          <img
-            src={scrolling}
-            alt=""
-          />
+          <img src={scrolling} alt="" />
         </span>
       </div>
       {/* <Drawer isScrolled={isScrolled} /> */}
