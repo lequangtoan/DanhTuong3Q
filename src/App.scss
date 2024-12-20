@@ -162,7 +162,7 @@ iframe {
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 3s ease infinite;
-  @include mobile {
+  @include tablet{
     display: none;
   }
 }
