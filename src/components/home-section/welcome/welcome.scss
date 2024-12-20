@@ -10,6 +10,9 @@
     background-position: 0 0;
     background-size: cover;
   }
+  @include mobile{
+    margin-top: calc($header-height);
+  }
 
   &__logo {
     position: absolute;
