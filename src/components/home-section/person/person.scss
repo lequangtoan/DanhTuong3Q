@@ -39,7 +39,9 @@
     background: url(../../../assets/images/Footage.png) no-repeat;
     background-position: 100% 100%;
     background-size: cover;
-
+    @include tablet {
+      top: 22rem;
+    }
     @include mobile {
       top: 35%;
       height: 2rem;
@@ -55,7 +57,7 @@
     @include tablet {
       width: 55%;
       height: auto;
-      top: 12rem;
+      top: 16rem;
       left: 50%;
       transform: translateX(-50%);
     }
