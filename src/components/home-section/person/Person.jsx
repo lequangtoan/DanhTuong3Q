@@ -2,7 +2,7 @@ import "./person.scss";
 
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, EffectCreative } from "swiper/modules";
+import { Navigation, EffectCreative } from "swiper/modules";
 
 import HomeSection from "../HomeSection";
 
@@ -10,9 +10,11 @@ import { BgFrame3 } from "../../../assets/videos";
 import { contry, homePerson } from "../../../assets/home-person";
 
 const swiperPerson = {
-  modules: [Mousewheel, EffectCreative],
+  modules: [Navigation, EffectCreative],
   // mousewheel: true,
   // pagination: true,
+  navigator: true,
+  rewind: true,
   speed: 600,
   grabCursor: true,
   effect: "creative",
@@ -156,7 +158,10 @@ const Person = (props) => {
                 
               ))}
             } */}
-            {datahomePerson.map((cvperson, id) => (
+            {datahomePerson.filter(
+                (datahomePerson) =>
+                  datahomePerson?.contry === isContry
+              ).map((cvperson, id) => (
               <SwiperSlide>
                 <div className="site__person__item__CV">
                   <div className="site__person__item__CV__bg  site-slide-in-right">

@@ -2,6 +2,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/effect-creative";
+import 'swiper/css/navigation';
 
 import "./App.scss";
 import Home from "./pages/home/Home";

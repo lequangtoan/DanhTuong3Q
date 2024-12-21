@@ -41,7 +41,7 @@
     background-size: cover;
 
     @include mobile {
-      top: 33%;
+      top: 35%;
       height: 2rem;
     }
   }
@@ -263,9 +263,17 @@
     @include tablet {
       display: block;
     }
-  }
-
-  .swiper-slide-active{
-    
+    .swiper-wrapper {
+      .swiper-slide {
+        @include tablet {
+          opacity: 0 !important;
+        }
+      }
+      .swiper-slide-active {
+        @include tablet {
+          opacity: 1 !important;
+        }
+      }
+    }
   }
 }
