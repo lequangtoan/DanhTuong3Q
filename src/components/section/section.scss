@@ -18,6 +18,14 @@
       display: none;
     }
   }
+  video::-webkit-media-controls {
+    @include tablet {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
 
   &.active {
     visibility: visible;
