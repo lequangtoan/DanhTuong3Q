@@ -23,11 +23,11 @@
       @include tablet {
         width: 80%;
         height: 5rem;
-        margin: calc($header-height * 2) auto 0;
+        margin: calc($header-height * 2 + ($header-height + 0.5rem)) auto 0;
       }
       @include mobile {
         width: 90%;
-        margin: $header-height auto 0;
+        margin: calc($header-height + ($header-height / 1.5)) auto 0;
       }
     }
   }
@@ -103,6 +103,24 @@
       }
       li ~ li {
         margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .footerweb {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    .footer_web {
+      display: block;
+      @include tablet {
+        display: none;
+      }
+    }
+    .footer_mobile{
+      display: none;
+      @include tablet {
+        display: block;
       }
     }
   }

@@ -8,7 +8,7 @@ import {
   facebook,
   gialappccolum,
   icongame,
-  napthe,
+  ButtonNapThe,
 } from "../../assets/images";
 
 const Drawer = () => {
@@ -61,7 +61,7 @@ const Drawer = () => {
           <img src={gialappccolum} alt="voucherCenter" />
         </a>
         <a href="##" className="slide-content-btn">
-          <img src={napthe} alt="voucherCenter" />
+          <img src={ButtonNapThe} alt="voucherCenter" />
         </a>
         <div className="slide-content-ground">
           <a href="##" className="slide-content-ground-btn" target="_blank">

@@ -23,20 +23,6 @@ const swiperOptions = {
 };
 
 const Home = () => {
-  // const [isScrolled, setIsScrolled] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const welcomeElement = document.querySelector(".welcome");
-  //     const welcomeHeight = welcomeElement.offsetHeight;
-  //     setIsScrolled(window.scrollY > welcomeHeight);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   return (
     <>
       <Swiper {...swiperOptions}>
@@ -61,13 +47,6 @@ const Home = () => {
           <img src={scrolling} alt="" />
         </span>
       </div>
-      {/* <div className="mobile">
-        <Welcome />
-        <News />
-        <Person />
-        <Comic />
-        <Feature />
-      </div> */}
     </>
   );
 };

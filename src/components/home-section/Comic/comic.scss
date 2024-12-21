@@ -7,10 +7,10 @@
     background: url(../../../assets/images/Backgroud/BG_Frame4.png) no-repeat;
     background-position: 100% 100%;
     background-size: cover;
-    padding-top: calc($header-height * 2);
+    padding-top: calc($header-height * 2 + ($header-height + 0.5rem));
   }
   @include mobile {
-    padding-top: $header-height;
+    padding-top: calc($header-height + ($header-height / 1.5));
   }
 
   .planning {

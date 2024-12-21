@@ -7,6 +7,7 @@ import HomeSection from "../HomeSection";
 
 import { BgFrame5 } from "../../../assets/videos";
 import { homeFeature } from "./../../../assets/home-feature";
+import { footermobile, footerweb } from "../../../assets/images";
 
 const Feature = (props) => {
   const [data] = useState(homeFeature);
@@ -134,6 +135,11 @@ const Feature = (props) => {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="footerweb">
+        <img className="footer_web" src={footerweb} alt="footer_web" />
+        <img className="footer_mobile" src={footermobile} alt="footer_mobile" />
       </div>
     </HomeSection>
   );

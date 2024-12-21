@@ -1,11 +1,31 @@
 import "./person.scss";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, EffectCreative } from "swiper/modules";
 
 import HomeSection from "../HomeSection";
 
 import { BgFrame3 } from "../../../assets/videos";
 import { contry, homePerson } from "../../../assets/home-person";
+
+const swiperPerson = {
+  modules: [Mousewheel, EffectCreative],
+  // mousewheel: true,
+  // pagination: true,
+  speed: 600,
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      // shadow: true,
+      translate: [0, 0, -400],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+};
 
 const Person = (props) => {
   const [datacontry] = useState(contry);
@@ -94,7 +114,6 @@ const Person = (props) => {
                   alt={`avatar-${id}`}
                 />
               </div>
-
               <div className="site__person__item__CV__description ">
                 <div className="site__person__item__CV__description__cv slide-in-right_0">
                   <img
@@ -128,6 +147,55 @@ const Person = (props) => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="site__person__item-mobile">
+          <Swiper {...swiperPerson}>
+            {datahomePerson?.map((cvperson, id) => (
+              <SwiperSlide>
+                <div className="site__person__item__CV">
+                  <div className="site__person__item__CV__bg  site-slide-in-right">
+                    <img
+                      className="site__person__item__CV__bg__img"
+                      src={cvperson?.bgLarge}
+                      alt={`avatar-${id}`}
+                    />
+                  </div>
+                  <div className="site__person__item__CV__description ">
+                    <div className="site__person__item__CV__description__cv slide-in-right_0">
+                      <img
+                        className="site__person__item__CV__description__cv__name"
+                        src={cvperson?.name}
+                        alt={`name-${id}`}
+                      />
+                    </div>
+                    <div className="site__person__item__CV__description__introduction slide-in-right_1">
+                      <p>{cvperson?.description}</p>
+                    </div>
+                    <div className="site__person__item__CV__description__skill slide-in-right_2">
+                      <img
+                        src={cvperson?.skill.skill1}
+                        alt={`skill-${cvperson?.skill.skill1}`}
+                      />
+                      <img
+                        src={cvperson?.skill.skill2}
+                        alt={`skill-${cvperson?.skill.skill2}`}
+                      />
+                      <img
+                        src={cvperson?.skill.skill3}
+                        alt={`skill-${cvperson?.skill.skill3}`}
+                      />
+                      <img
+                        src={cvperson?.skill.skill4}
+                        alt={`skill-${cvperson?.skill.skill4}`}
+                      />
+                    </div>
+                    <div className="site__person__item__CV__description__video slide-in-right_3"></div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </HomeSection>

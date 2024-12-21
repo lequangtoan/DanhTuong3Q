@@ -16,6 +16,7 @@ import appstore from "./images/App_Store.png";
 import chplay from "./images/CH_Play.png";
 import gialappc from "./images/Gia_Lap_PC.png";
 import napthe from "./images/Nap_The.png";
+import ButtonNapThe from "./images/ButtonNapThe.png";
 import frameicon from "./images/Frame_Icon.png";
 
 import news from "./images/News.png";
@@ -31,6 +32,9 @@ import tinhnangdacsac from "./images/Tinh_Nang_Dac_Sac.png";
 
 import danhtuongtamquoc from "./images/Danh_Tuong_Tam_Quoc.png";
 import footage from "./images/Footage.png";
+
+import footermobile from "./images/footer_mobile.png";
+import footerweb from "./images/footer_web.png";
 
 import test from "./images/text.jpg";
 import test1 from "./images/test1.png";
@@ -55,6 +59,7 @@ export {
   chplay,
   gialappc,
   napthe,
+  ButtonNapThe,
   frameicon,
   news,
   stick,
@@ -66,4 +71,6 @@ export {
   tinhnangdacsac,
   danhtuongtamquoc,
   footage,
+  footerweb,
+  footermobile,
 };
