@@ -151,6 +151,11 @@ const Person = (props) => {
 
         <div className="site__person__item-mobile">
           <Swiper {...swiperPerson}>
+            {/* {
+              {datacontry?.map((contry, index) => (
+                
+              ))}
+            } */}
             {datahomePerson?.map((cvperson, id) => (
               <SwiperSlide>
                 <div className="site__person__item__CV">
