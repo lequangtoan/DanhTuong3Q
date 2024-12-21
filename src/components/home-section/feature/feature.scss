@@ -82,7 +82,7 @@
         height: auto;
       }
       @include mobile {
-        width: 70%;
+        width: 60%;
       }
       li {
         display: flex;
@@ -117,7 +117,7 @@
         display: none;
       }
     }
-    .footer_mobile{
+    .footer_mobile {
       display: none;
       @include tablet {
         display: block;

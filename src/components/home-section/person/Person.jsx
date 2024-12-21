@@ -156,7 +156,7 @@ const Person = (props) => {
                 
               ))}
             } */}
-            {datahomePerson?.map((cvperson, id) => (
+            {datahomePerson.map((cvperson, id) => (
               <SwiperSlide>
                 <div className="site__person__item__CV">
                   <div className="site__person__item__CV__bg  site-slide-in-right">
