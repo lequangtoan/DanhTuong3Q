@@ -7,7 +7,7 @@ const Section = (props) => {
 export const SectionBanner = (props) => {
   return (
     <>
-      <video src={props.bgImage} autoPlay loop />
+      <video src={props.bgImage} autoPlay muted loop/>
       <div className={`section__content ${props.className}`}>
         {props.children}
       </div>

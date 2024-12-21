@@ -107,11 +107,11 @@ $size: 1.5rem;
         width: 45%;
         height: 25rem;
         @include tablet {
-          width: 85%;
-          height: 30rem;
+          width: 80%;
+          height: 25rem;
         }
         @include mobile {
-          height: 15rem;
+          height: 10rem;
         }
 
         &__title {
@@ -198,7 +198,10 @@ $size: 1.5rem;
 
         &__more-link {
           @include tablet {
-            margin: 2.5rem auto 0;
+            margin: 0.5rem auto 0;
+          }
+          @include mobile {
+            margin: 1.5rem auto 0;
           }
           img {
             @include mobile {
