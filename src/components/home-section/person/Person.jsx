@@ -13,11 +13,11 @@ const swiperPerson = {
   modules: [Navigation, EffectCreative],
   // mousewheel: true,
   // pagination: true,
-  navigator: true,
   rewind: true,
   speed: 600,
   grabCursor: true,
-  effect: "creative",
+  navigation: true,
+  // effect: "creative",
   // creativeEffect: {
   //   prev: {
   //     // shadow: true,
