@@ -156,6 +156,7 @@ iframe {
 }
 
 .scrolled {
+  display: none;
   position: fixed;
   bottom: 1rem;
   z-index: 1;
@@ -176,6 +177,13 @@ iframe {
   }
   100% {
     transform: translateX(-50%) translateY(0);
+  }
+}
+
+.hidden {
+  display: block;
+  @include tablet {
+    display: none;
   }
 }
 
