@@ -2,13 +2,14 @@
 
 .section {
   height: 100%;
-  // overflow: hidden;
-  // visibility: hidden;
+  overflow: hidden;
+  visibility: hidden;
   // transition: visibility 1s ease;
 
   video {
+    width: 100vw;
+    height: auto;
     position: absolute;
-    height: fit-content;
     left: 50%;
     transform: translate(-50%);
     @include tablet {

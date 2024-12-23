@@ -8,7 +8,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  // pointer-events: none;
   background-image: url(../../assets/images/BG_Menu.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -82,6 +81,7 @@
     &__item {
       @include flex(center, center);
       font-family: $font-family;
+      color: $txt-color-white;
       @include tablet {
         @include flex(center, space-between);
         position: absolute;

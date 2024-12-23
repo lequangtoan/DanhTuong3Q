@@ -111,6 +111,11 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+
+    img{
+      width: 100%;
+    }
+
     .footer_web {
       display: block;
       @include tablet {
